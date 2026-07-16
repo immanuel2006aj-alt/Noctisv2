@@ -221,59 +221,53 @@ item.classList.add("hidden");
 observer.observe(item);
 
 });
-/*==================================================
-ANIMATED COUNTERS
-==================================================*/
+/*==========================================
+PRICING COUNTER
+==========================================*/
 
-const counters=document.querySelectorAll(".counter");
+const pricingCounter=document.querySelector(".price-counter .counter");
 
-const counterObserver=new IntersectionObserver(entries=>{
+if(pricingCounter){
 
-entries.forEach(entry=>{
+    let current=0;
 
-if(entry.isIntersecting){
+    const target=1999;
 
-const counter=entry.target;
+    const increment=Math.ceil(target/80);
 
-const target=+counter.dataset.target;
+    const animate=()=>{
 
-let count=0;
+        current+=increment;
 
-const speed=Math.max(10,Math.floor(target/80));
+        if(current>=target){
 
-const update=()=>{
+            pricingCounter.innerText=target.toLocaleString("en-IN");
 
-count+=speed;
+            return;
 
-if(count>=target){
+        }
 
-counter.innerText=target;
+        pricingCounter.innerText=current.toLocaleString("en-IN");
 
-}else{
+        requestAnimationFrame(animate);
 
-counter.innerText=count;
+    };
 
-requestAnimationFrame(update);
+    const pricingObserver=new IntersectionObserver(entries=>{
+
+        if(entries[0].isIntersecting){
+
+            animate();
+
+            pricingObserver.disconnect();
+
+        }
+
+    });
+
+    pricingObserver.observe(pricingCounter);
 
 }
-
-};
-
-update();
-
-counterObserver.unobserve(counter);
-
-}
-
-});
-
-},{threshold:.5});
-
-counters.forEach(counter=>{
-
-counterObserver.observe(counter);
-
-});
 
 /*==================================================
 ACTIVE NAVIGATION
