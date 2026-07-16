@@ -1,0 +1,6044 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ==========================================
+         BASIC META
+    =========================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+
+    <meta name="theme-color"
+          content="#2F66F3">
+
+    <!-- ==========================================
+         SEO
+    =========================================== -->
+
+    <title>Noctis Technologies | Engineering Digital Experiences That Inspire Growth</title>
+
+    <meta name="description"
+          content="Noctis Technologies is a remote-first digital innovation company delivering premium websites, AI-powered solutions, software development, UI/UX design, and digital transformation for businesses worldwide.">
+
+    <meta name="keywords"
+          content="Noctis Technologies, Website Development, Web Design, UI UX Design, AI Solutions, Software Development, E-Commerce, SEO, Digital Innovation">
+
+    <meta name="author"
+          content="Noctis Technologies">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <!-- ==========================================
+         OPEN GRAPH
+    =========================================== -->
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:title"
+          content="Noctis Technologies">
+
+    <meta property="og:description"
+          content="Engineering Digital Experiences That Inspire Growth.">
+
+    <!-- ==========================================
+         FONTS
+    =========================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- ==========================================
+         FAVICON
+    =========================================== -->
+
+    <link rel="icon"
+          type="image/svg+xml"
+          href="favicon.svg">
+
+    <!-- ==========================================
+         CSS
+    =========================================== -->
+
+    <style>
+      /*==================================================
+NOCTIS TECHNOLOGIES DESIGN SYSTEM
+Version : 1.0
+Theme   : Royal Blue × Sage Green × Warm White
+==================================================*/
+
+:root{
+
+    /*==================================================
+    BRAND COLORS
+    ==================================================*/
+
+    --primary:#2F66F3;
+    --primary-light:#5A8CFF;
+    --primary-dark:#214FCC;
+
+    --secondary:#5C6AC4;
+
+    /*==================================================
+    SAGE GREEN
+    ==================================================*/
+
+    --sage:#AEB8A4;
+    --sage-dark:#98A38E;
+    --sage-light:#D8DDD3;
+    --sage-soft:#EEF2EB;
+
+    /*==================================================
+    BACKGROUND
+    ==================================================*/
+
+    --background:#FCFCFB;
+    --section:#F7F8F6;
+    --surface:#FFFFFF;
+    --card:#FFFFFF;
+
+    /*==================================================
+    TEXT
+    ==================================================*/
+
+    --text:#1A1A1A;
+    --text-light:#6E737B;
+    --text-muted:#9EA3AA;
+
+    /*==================================================
+    STATUS
+    ==================================================*/
+
+    --success:#22C55E;
+    --warning:#F59E0B;
+    --danger:#EF4444;
+
+    /*==================================================
+    BORDER
+    ==================================================*/
+
+    --border:#E7E9EC;
+    --divider:#F2F4F6;
+
+    /*==================================================
+    SHADOWS
+    ==================================================*/
+
+    --shadow-xs:0 2px 10px rgba(17,24,39,.04);
+
+    --shadow-sm:0 8px 20px rgba(17,24,39,.06);
+
+    --shadow:0 15px 40px rgba(17,24,39,.08);
+
+    --shadow-lg:0 25px 80px rgba(17,24,39,.12);
+
+    /*==================================================
+    GLOW
+    ==================================================*/
+
+    --blue-glow:0 0 60px rgba(47,102,243,.18);
+
+    --sage-glow:0 0 60px rgba(174,184,164,.20);
+
+    /*==================================================
+    GLASS
+    ==================================================*/
+
+    --glass:rgba(255,255,255,.72);
+
+    --glass-border:rgba(255,255,255,.65);
+
+    --blur:blur(22px);
+
+    /*==================================================
+    BORDER RADIUS
+    ==================================================*/
+
+    --radius-xs:12px;
+    --radius-sm:18px;
+    --radius:24px;
+    --radius-lg:32px;
+    --radius-xl:40px;
+
+    /*==================================================
+    SPACING
+    ==================================================*/
+
+    --space-1:8px;
+    --space-2:16px;
+    --space-3:24px;
+    --space-4:32px;
+    --space-5:48px;
+    --space-6:64px;
+    --space-7:96px;
+    --space-8:120px;
+
+    /*==================================================
+    CONTAINER
+    ==================================================*/
+
+    --container:1320px;
+
+    /*==================================================
+    HEADER
+    ==================================================*/
+
+    --header-height:90px;
+
+    /*==================================================
+    ANIMATION
+    ==================================================*/
+
+    --transition:.35s ease;
+
+  }
+      /*==================================================
+RESET
+==================================================*/
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+    scroll-padding-top:var(--header-height);
+
+    font-size:16px;
+
+}
+
+body{
+
+    font-family:"Inter",sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+    text-rendering:optimizeLegibility;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+}
+
+/*==================================================
+TYPOGRAPHY
+==================================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-family:"Space Grotesk",sans-serif;
+
+    color:var(--text);
+
+    font-weight:700;
+
+    line-height:1.08;
+
+    letter-spacing:-.03em;
+
+}
+
+h1{
+
+    font-size:clamp(3rem,8vw,6rem);
+
+}
+
+h2{
+
+    font-size:clamp(2.3rem,5vw,4rem);
+
+}
+
+h3{
+
+    font-size:clamp(1.4rem,3vw,2rem);
+
+}
+
+h4{
+
+    font-size:1.2rem;
+
+}
+
+p{
+
+    color:var(--text-light);
+
+    font-size:1rem;
+
+}
+
+small{
+
+    color:var(--text-muted);
+
+}
+
+strong{
+
+    color:var(--text);
+
+}
+
+/*==================================================
+ELEMENTS
+==================================================*/
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+    transition:var(--transition);
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+img{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+}
+
+svg{
+
+    display:block;
+
+    flex-shrink:0;
+
+}
+
+button{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    font:inherit;
+
+}
+
+input,
+textarea,
+select{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    font:inherit;
+
+}
+
+/*==================================================
+LAYOUT
+==================================================*/
+
+.container{
+
+    width:min(92%,var(--container));
+
+    margin-inline:auto;
+
+}
+
+section{
+
+    position:relative;
+
+    padding:var(--space-8) 0;
+
+}
+
+/*==================================================
+SELECTION
+==================================================*/
+
+::selection{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/*==================================================
+SCROLLBAR
+==================================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:var(--section);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:linear-gradient(
+
+        var(--primary),
+
+        var(--sage)
+
+    );
+
+    border-radius:999px;
+
+}
+
+/*==================================================
+FOCUS
+==================================================*/
+
+:focus-visible{
+
+    outline:3px solid rgba(47,102,243,.35);
+
+    outline-offset:4px;
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:1200px){
+
+.container{
+
+width:94%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+section{
+
+padding:90px 0;
+
+}
+
+}
+
+@media(max-width:576px){
+
+html{
+
+font-size:15px;
+
+}
+
+section{
+
+padding:72px 0;
+
+}
+
+  }
+      /*==================================================
+HEADER
+==================================================*/
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    padding:22px 0;
+
+    transition:all .35s ease;
+
+}
+
+.header.scrolled{
+
+    padding:14px 0;
+
+}
+
+/*==================================================
+NAVBAR
+==================================================*/
+
+.navbar{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+    height:72px;
+
+    padding:0 26px;
+
+    background:rgba(255,255,255,.72);
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,.65);
+
+    border-radius:999px;
+
+    box-shadow:
+    var(--shadow),
+    inset 0 1px rgba(255,255,255,.9);
+
+}
+
+/*==================================================
+WORDMARK
+==================================================*/
+
+.brand{
+
+    display:flex;
+
+    align-items:center;
+
+    flex-shrink:0;
+
+}
+
+.brand-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+    line-height:1;
+
+}
+
+.brand-title{
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:1.25rem;
+
+    font-weight:700;
+
+    letter-spacing:.28em;
+
+    color:var(--text);
+
+    text-transform:uppercase;
+
+}
+
+.brand-subtitle{
+
+    margin-top:6px;
+
+    font-size:.88rem;
+
+    font-weight:600;
+
+    letter-spacing:.08em;
+
+    color:var(--sage-dark);
+
+}
+
+/*==================================================
+NAVIGATION
+==================================================*/
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:34px;
+
+}
+
+.nav-links a{
+
+    position:relative;
+
+    font-size:.96rem;
+
+    font-weight:600;
+
+    color:var(--text-light);
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:var(--primary);
+
+}
+
+.nav-links a.active{
+
+    color:var(--primary);
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+    90deg,
+    var(--primary),
+    var(--sage));
+
+    transition:.35s;
+
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after{
+
+    width:100%;
+
+}
+
+/*==================================================
+RIGHT
+==================================================*/
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+/*==================================================
+BUTTON
+==================================================*/
+
+.btn-primary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    height:48px;
+
+    padding:0 24px;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary));
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/*==================================================
+MENU
+==================================================*/
+
+.menu-toggle{
+
+    display:none;
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    color:var(--text);
+
+    transition:.3s;
+
+}
+
+.menu-toggle:hover{
+
+    background:var(--sage-soft);
+
+}
+
+/*==================================================
+MOBILE MENU
+==================================================*/
+
+.mobile-menu{
+
+    position:fixed;
+
+    top:0;
+
+    right:-100%;
+
+    width:100%;
+
+    height:100vh;
+
+    background:rgba(252,252,251,.98);
+
+    backdrop-filter:blur(28px);
+
+    transition:.4s;
+
+    z-index:999;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.mobile-menu.active{
+
+    right:0;
+
+}
+
+.mobile-menu nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:28px;
+
+}
+
+.mobile-menu a{
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:1.5rem;
+
+    color:var(--text);
+
+    font-weight:600;
+
+}
+
+/*==================================================
+SCROLL PROGRESS
+==================================================*/
+
+.scroll-progress{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:0;
+
+    height:3px;
+
+    background:linear-gradient(
+    90deg,
+    var(--primary),
+    var(--sage));
+
+    z-index:2000;
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:1100px){
+
+.nav-links{
+
+display:none;
+
+}
+
+.menu-toggle{
+
+display:flex;
+
+}
+
+.nav-right .btn-primary{
+
+display:none;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.header{
+
+padding:16px 0;
+
+}
+
+.navbar{
+
+height:64px;
+
+padding:0 18px;
+
+}
+
+.brand-title{
+
+font-size:1.05rem;
+
+letter-spacing:.22em;
+
+}
+
+.brand-subtitle{
+
+font-size:.8rem;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.navbar{
+
+border-radius:20px;
+
+}
+
+.brand-subtitle{
+
+display:none;
+
+}
+
+  }
+      /*==================================================
+HERO
+==================================================*/
+
+.hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding-top:180px;
+
+    padding-bottom:120px;
+
+}
+
+.hero-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    align-items:center;
+
+    gap:80px;
+
+}
+
+/*==================================================
+LEFT
+==================================================*/
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.hero-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 20px;
+
+    margin-bottom:28px;
+
+    border-radius:999px;
+
+    background:var(--sage-soft);
+
+    border:1px solid var(--sage-light);
+
+    color:var(--sage-dark);
+
+    font-size:.92rem;
+
+    font-weight:600;
+
+}
+
+.hero h1{
+
+    max-width:720px;
+
+    margin-bottom:28px;
+
+}
+
+.hero p{
+
+    max-width:620px;
+
+    font-size:1.08rem;
+
+    margin-bottom:42px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:60px;
+
+}
+
+.btn-secondary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    height:48px;
+
+    padding:0 24px;
+
+    border-radius:999px;
+
+    border:1px solid var(--border);
+
+    background:#fff;
+
+    color:var(--text);
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--sage-soft);
+
+    transform:translateY(-3px);
+
+}
+
+/*==================================================
+STATS
+==================================================*/
+
+.hero-info{
+
+    display:flex;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-item h3{
+
+    color:var(--primary);
+
+    font-size:2rem;
+
+    margin-bottom:6px;
+
+}
+
+.hero-item span{
+
+    color:var(--text-light);
+
+    font-size:.92rem;
+
+}
+
+/*==================================================
+RIGHT
+==================================================*/
+
+.hero-visual{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:650px;
+
+}
+
+/*==================================================
+BACKGROUND CIRCLES
+==================================================*/
+
+.hero-circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(25px);
+
+}
+
+.hero-circle-one{
+
+    width:420px;
+
+    height:420px;
+
+    background:rgba(47,102,243,.10);
+
+}
+
+.hero-circle-two{
+
+    width:300px;
+
+    height:300px;
+
+    background:rgba(174,184,164,.18);
+
+    top:40px;
+
+    right:20px;
+
+}
+
+/*==================================================
+MAIN ILLUSTRATION
+==================================================*/
+
+.hero-illustration{
+
+    width:420px;
+
+    height:500px;
+
+    border-radius:36px;
+
+    background:linear-gradient(
+    135deg,
+    rgba(255,255,255,.95),
+    rgba(238,242,235,.92));
+
+    border:1px solid var(--border);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:var(--shadow-lg);
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/*==================================================
+FLOATING CARDS
+==================================================*/
+
+.hero-card{
+
+    position:absolute;
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.65);
+
+    border-radius:22px;
+
+    padding:18px 22px;
+
+    box-shadow:var(--shadow);
+
+    z-index:3;
+
+}
+
+.hero-card h4{
+
+    margin-bottom:6px;
+
+    font-size:1rem;
+
+}
+
+.hero-card small{
+
+    color:var(--text-muted);
+
+}
+
+.card-one{
+
+    top:20px;
+
+    left:-10px;
+
+}
+
+.card-two{
+
+    right:-10px;
+
+    top:180px;
+
+}
+
+.card-three{
+
+    bottom:20px;
+
+    left:20px;
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+.hero{
+
+padding-top:150px;
+
+}
+
+.hero-wrapper{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.hero-content p{
+
+margin:auto;
+
+margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.hero-info{
+
+justify-content:center;
+
+}
+
+.hero-visual{
+
+margin-top:40px;
+
+min-height:520px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-illustration{
+
+width:320px;
+
+height:400px;
+
+}
+
+.hero-card{
+
+display:none;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.hero{
+
+padding-top:130px;
+
+}
+
+.hero-illustration{
+
+width:260px;
+
+height:330px;
+
+}
+
+.hero-info{
+
+gap:24px;
+
+}
+
+      }
+      /*==================================================
+TECHNOLOGY ECOSYSTEM
+==================================================*/
+
+.ecosystem{
+
+    background:linear-gradient(
+        180deg,
+        var(--background),
+        var(--section));
+
+    overflow:hidden;
+
+}
+
+.section-heading{
+
+    max-width:760px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+.section-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:12px 22px;
+
+    margin-bottom:22px;
+
+    border-radius:999px;
+
+    background:var(--sage-soft);
+
+    border:1px solid var(--sage-light);
+
+    color:var(--sage-dark);
+
+    font-size:.92rem;
+
+    font-weight:600;
+
+}
+
+.section-heading h2{
+
+    margin-bottom:24px;
+
+}
+
+.section-heading p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    font-size:1.05rem;
+
+}
+
+/*==================================================
+MARQUEE
+==================================================*/
+
+.tech-marquee{
+
+    width:100%;
+
+    overflow:hidden;
+
+    mask-image:linear-gradient(
+        to right,
+        transparent,
+        #000 10%,
+        #000 90%,
+        transparent);
+
+    -webkit-mask-image:linear-gradient(
+        to right,
+        transparent,
+        #000 10%,
+        #000 90%,
+        transparent);
+
+}
+
+.tech-track{
+
+    display:flex;
+
+    gap:22px;
+
+    width:max-content;
+
+    animation:marquee 28s linear infinite;
+
+}
+
+.tech-marquee:hover .tech-track{
+
+    animation-play-state:paused;
+
+}
+
+/*==================================================
+TECH CARD
+==================================================*/
+
+.tech-item{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:170px;
+
+    height:70px;
+
+    padding:0 28px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.88);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-sm);
+
+    color:var(--text);
+
+    font-weight:700;
+
+    letter-spacing:.02em;
+
+    transition:var(--transition);
+
+}
+
+.tech-item:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--sage);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/*==================================================
+ANIMATION
+==================================================*/
+
+@keyframes marquee{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-50%);
+
+    }
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:768px){
+
+.tech-item{
+
+min-width:145px;
+
+height:62px;
+
+font-size:.9rem;
+
+padding:0 20px;
+
+}
+
+.section-heading{
+
+margin-bottom:50px;
+
+}
+
+  }
+  /*==================================================
+WHY NOCTIS
+==================================================*/
+
+.why-noctis{
+
+    background:var(--background);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:32px;
+
+    margin-top:70px;
+
+}
+
+/*==================================================
+CARD
+==================================================*/
+
+.why-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:40px;
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid var(--border);
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow);
+
+    transition:all .4s ease;
+
+}
+
+.why-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        rgba(47,102,243,.03),
+        rgba(174,184,164,.10));
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--sage);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.why-card:hover::before{
+
+    opacity:1;
+
+}
+
+/*==================================================
+ICON
+==================================================*/
+
+.why-icon{
+
+    width:78px;
+
+    height:78px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:28px;
+
+    border-radius:22px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(47,102,243,.08),
+        rgba(174,184,164,.18));
+
+    border:1px solid var(--border);
+
+}
+
+.why-icon svg{
+
+    width:68px;
+
+    height:68px;
+
+}
+
+/*==================================================
+TEXT
+==================================================*/
+
+.why-card h3{
+
+    margin-bottom:18px;
+
+    font-size:1.5rem;
+
+}
+
+.why-card p{
+
+    font-size:1rem;
+
+    line-height:1.9;
+
+    color:var(--text-light);
+
+}
+
+/*==================================================
+TOP BORDER
+==================================================*/
+
+.why-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--sage));
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.4s;
+
+}
+
+.why-card:hover::after{
+
+    transform:scaleX(1);
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+.why-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.why-card{
+
+padding:30px;
+
+}
+
+.why-icon{
+
+width:68px;
+
+height:68px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.why-grid{
+
+gap:22px;
+
+}
+
+.why-card{
+
+padding:24px;
+
+border-radius:24px;
+
+}
+
+                    }
+      /*==================================================
+SERVICES
+==================================================*/
+
+.services{
+
+    background:var(--section);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.services::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-180px;
+
+    right:-180px;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(174,184,164,.18),
+        transparent 70%);
+
+    pointer-events:none;
+
+}
+
+.services::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-220px;
+
+    left:-180px;
+
+    width:480px;
+
+    height:480px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(47,102,243,.08),
+        transparent 70%);
+
+    pointer-events:none;
+
+}
+
+/*==================================================
+GRID
+==================================================*/
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+    margin-top:70px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/*==================================================
+FEATURED CARD
+==================================================*/
+
+.service-card.featured{
+
+    grid-column:span 2;
+
+}
+
+/*==================================================
+CARD
+==================================================*/
+
+.service-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:38px;
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid var(--border);
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s ease;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--sage);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.service-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        rgba(47,102,243,.03),
+        rgba(174,184,164,.08));
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.service-card:hover::before{
+
+    opacity:1;
+
+}
+
+/*==================================================
+ICON
+==================================================*/
+
+.service-icon{
+
+    width:82px;
+
+    height:82px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:26px;
+
+    border-radius:24px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(47,102,243,.08),
+        rgba(174,184,164,.18));
+
+    border:1px solid var(--border);
+
+    transition:.4s;
+
+}
+
+.service-card:hover .service-icon{
+
+    transform:rotate(-6deg) scale(1.05);
+
+}
+
+/*==================================================
+TEXT
+==================================================*/
+
+.service-card h3{
+
+    margin-bottom:16px;
+
+    font-size:1.45rem;
+
+}
+
+.service-card p{
+
+    margin-bottom:24px;
+
+    line-height:1.9;
+
+}
+
+.service-card span{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:var(--sage-soft);
+
+    color:var(--sage-dark);
+
+    font-size:.86rem;
+
+    font-weight:600;
+
+}
+
+/*==================================================
+TOP LINE
+==================================================*/
+
+.service-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--sage));
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.4s;
+
+}
+
+.service-card:hover::after{
+
+    transform:scaleX(1);
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:1200px){
+
+.services-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.service-card.featured{
+
+grid-column:span 2;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.services-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.service-card.featured{
+
+grid-column:span 1;
+
+}
+
+.service-card{
+
+padding:30px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.service-card{
+
+padding:24px;
+
+border-radius:24px;
+
+}
+
+.service-icon{
+
+width:72px;
+
+height:72px;
+
+}
+
+.service-card h3{
+
+font-size:1.25rem;
+
+}
+
+      }
+      /*==================================================
+SOLUTIONS
+==================================================*/
+
+.solutions{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:var(--background);
+
+}
+
+.solutions::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-200px;
+
+    left:-180px;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(47,102,243,.08),
+        transparent 70%);
+
+    pointer-events:none;
+
+}
+
+.solutions::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-180px;
+
+    right:-180px;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(174,184,164,.16),
+        transparent 70%);
+
+    pointer-events:none;
+
+}
+
+/*==================================================
+GRID
+==================================================*/
+
+.solutions-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+    margin-top:70px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/*==================================================
+CARD
+==================================================*/
+
+.solution-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:36px;
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid var(--border);
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow);
+
+    transition:all .4s ease;
+
+}
+
+.solution-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--sage);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.solution-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        135deg,
+        rgba(47,102,243,.04),
+        rgba(174,184,164,.10));
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.solution-card:hover::before{
+
+    opacity:1;
+
+}
+
+/*==================================================
+FEATURED
+==================================================*/
+
+.solution-card.featured{
+
+    background:linear-gradient(
+        135deg,
+        rgba(47,102,243,.05),
+        rgba(174,184,164,.16));
+
+    border-color:rgba(47,102,243,.15);
+
+}
+
+/*==================================================
+ICON
+==================================================*/
+
+.solution-icon{
+
+    width:82px;
+
+    height:82px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:26px;
+
+    border-radius:22px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(47,102,243,.08),
+        rgba(174,184,164,.18));
+
+    border:1px solid var(--border);
+
+    transition:.35s;
+
+}
+
+.solution-card:hover .solution-icon{
+
+    transform:scale(1.08) rotate(-6deg);
+
+}
+
+/*==================================================
+TEXT
+==================================================*/
+
+.solution-card h3{
+
+    margin-bottom:16px;
+
+    font-size:1.45rem;
+
+}
+
+.solution-card p{
+
+    color:var(--text-light);
+
+    line-height:1.9;
+
+}
+
+/*==================================================
+TOP BORDER
+==================================================*/
+
+.solution-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--sage));
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.35s;
+
+}
+
+.solution-card:hover::after{
+
+    transform:scaleX(1);
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:1200px){
+
+.solutions-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.solutions-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.solution-card{
+
+padding:30px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.solution-card{
+
+padding:24px;
+
+border-radius:24px;
+
+}
+
+.solution-icon{
+
+width:72px;
+
+height:72px;
+
+}
+
+.solution-card h3{
+
+font-size:1.25rem;
+
+}
+
+  }
+      /*==================================================
+PORTFOLIO
+==================================================*/
+
+.portfolio{
+
+    position:relative;
+
+    background:var(--section);
+
+    overflow:hidden;
+
+}
+
+.portfolio::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-220px;
+
+    right:-180px;
+
+    width:460px;
+
+    height:460px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+
+        rgba(47,102,243,.08),
+
+        transparent 70%
+
+    );
+
+}
+
+.portfolio::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-220px;
+
+    left:-180px;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+
+        rgba(174,184,164,.18),
+
+        transparent 70%
+
+    );
+
+}
+
+/*==================================================
+GRID
+==================================================*/
+
+.portfolio-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:34px;
+
+    margin-top:70px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/*==================================================
+CARD
+==================================================*/
+
+.project-card{
+
+    overflow:hidden;
+
+    border-radius:32px;
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+    transition:.45s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:var(--sage);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.project-card.featured{
+
+    grid-column:span 2;
+
+}
+
+/*==================================================
+PREVIEW
+==================================================*/
+
+.project-preview{
+
+    height:340px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:linear-gradient(
+
+        135deg,
+
+        rgba(47,102,243,.05),
+
+        rgba(174,184,164,.12)
+
+    );
+
+    border-bottom:1px solid var(--border);
+
+}
+
+/*==================================================
+CONTENT
+==================================================*/
+
+.project-content{
+
+    padding:36px;
+
+}
+
+.project-category{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    background:var(--sage-soft);
+
+    color:var(--sage-dark);
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+.project-content h3{
+
+    margin-bottom:18px;
+
+    font-size:1.8rem;
+
+}
+
+.project-content p{
+
+    margin-bottom:28px;
+
+    line-height:1.9;
+
+}
+
+/*==================================================
+TAGS
+==================================================*/
+
+.project-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-bottom:30px;
+
+}
+
+.project-tags span{
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    border:1px solid var(--border);
+
+    background:#fff;
+
+    font-size:.84rem;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.project-tags span:hover{
+
+    background:var(--sage-soft);
+
+    border-color:var(--sage);
+
+}
+
+/*==================================================
+LINK
+==================================================*/
+
+.project-content a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.project-content a:hover{
+
+    gap:16px;
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+.project-card.featured{
+
+grid-column:span 1;
+
+}
+
+.portfolio-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.project-preview{
+
+height:260px;
+
+}
+
+.project-content{
+
+padding:28px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.project-content{
+
+padding:22px;
+
+}
+
+.project-content h3{
+
+font-size:1.45rem;
+
+}
+
+.project-preview{
+
+height:220px;
+
+}
+
+                             }
+      /*==================================================
+PROCESS
+==================================================*/
+
+.process{
+
+    position:relative;
+
+    background:var(--background);
+
+    overflow:hidden;
+
+}
+
+.process-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:28px;
+
+    margin-top:70px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.process-line{
+
+    position:absolute;
+
+    left:10%;
+
+    right:10%;
+
+    top:260px;
+
+    height:2px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--sage)
+    );
+
+    opacity:.15;
+
+}
+
+.process-card{
+
+    position:relative;
+
+    padding:34px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.process-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-lg);
+
+    border-color:var(--sage);
+
+}
+
+.step-number{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+.process-icon{
+
+    width:84px;
+
+    height:84px;
+
+    margin:0 auto 24px;
+
+    border-radius:24px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:linear-gradient(
+        135deg,
+        rgba(47,102,243,.08),
+        rgba(174,184,164,.18)
+    );
+
+    border:1px solid var(--border);
+
+}
+
+.process-card h3{
+
+    margin-bottom:16px;
+
+}
+
+.process-card p{
+
+    line-height:1.8;
+
+}
+
+@media(max-width:1200px){
+
+.process-grid{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+.process-line{
+
+display:none;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.process-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.process-card{
+
+padding:28px;
+
+}
+
+  }
+      /*==================================================
+PRICING
+==================================================*/
+
+.pricing{
+
+    background:var(--section);
+
+}
+
+.pricing-banner{
+
+    margin:60px auto;
+
+    max-width:720px;
+
+    text-align:center;
+
+    padding:45px;
+
+    border-radius:30px;
+
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+
+    color:#fff;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.pricing-banner span{
+
+    display:block;
+
+    opacity:.9;
+
+    margin-bottom:10px;
+
+    font-size:1rem;
+
+}
+
+.pricing-banner h2{
+
+    color:#fff;
+
+    font-size:clamp(2.8rem,6vw,4.8rem);
+
+}
+
+.pricing-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.price-card{
+
+    position:relative;
+
+    padding:40px;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.price-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.price-card.featured{
+
+    border:2px solid var(--primary);
+
+}
+
+.popular{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+}
+
+.plan{
+
+    color:var(--sage-dark);
+
+    font-weight:700;
+
+    display:block;
+
+    margin-bottom:18px;
+
+}
+
+.price-card h3{
+
+    font-size:2.6rem;
+
+    margin-bottom:16px;
+
+}
+
+.price-card p{
+
+    margin-bottom:24px;
+
+}
+
+.price-card ul{
+
+    margin-bottom:34px;
+
+}
+
+.price-card li{
+
+    margin-bottom:14px;
+
+    color:var(--text-light);
+
+}
+
+.price-card .btn-primary{
+
+    width:100%;
+
+}
+
+@media(max-width:992px){
+
+.pricing-grid{
+
+grid-template-columns:1fr;
+
+}
+
+  }
+      /*==================================================
+TEAM
+==================================================*/
+
+.team{
+
+    background:var(--background);
+
+}
+
+.team-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:28px;
+
+    margin-top:70px;
+
+}
+
+.team-card{
+
+    text-align:center;
+
+    padding:38px 30px;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.team-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--sage);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.team-card.featured{
+
+    border:2px solid var(--primary);
+
+}
+
+.team-avatar{
+
+    width:120px;
+
+    height:120px;
+
+    margin:0 auto 26px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        rgba(47,102,243,.08),
+        rgba(174,184,164,.18)
+    );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border:1px solid var(--border);
+
+}
+
+.team-card h3{
+
+    margin-bottom:10px;
+
+}
+
+.team-card span{
+
+    display:block;
+
+    margin-bottom:18px;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+.team-card p{
+
+    line-height:1.8;
+
+}
+
+@media(max-width:1200px){
+
+.team-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.team-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.team-card{
+
+padding:30px;
+
+}
+
+  }
+      /*==================================================
+TESTIMONIALS
+==================================================*/
+
+.testimonials{
+
+    background:var(--section);
+
+}
+
+.testimonial-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+    margin-top:70px;
+
+}
+
+.testimonial-card{
+
+    position:relative;
+
+    padding:36px;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    border-radius:30px;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.testimonial-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--sage);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.testimonial-card.featured{
+
+    border:2px solid var(--primary);
+
+}
+
+.quote-mark{
+
+    font-size:4rem;
+
+    color:var(--primary);
+
+    line-height:1;
+
+    margin-bottom:20px;
+
+}
+
+.testimonial-card p{
+
+    margin-bottom:30px;
+
+    line-height:1.9;
+
+}
+
+.testimonial-user{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.user-avatar{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff;
+
+    font-weight:700;
+
+}
+
+.testimonial-user h4{
+
+    margin-bottom:4px;
+
+}
+
+.testimonial-user span{
+
+    color:var(--text-light);
+
+    font-size:.9rem;
+
+}
+
+@media(max-width:992px){
+
+.testimonial-grid{
+
+grid-template-columns:1fr;
+
+}
+
+  }
+      /*==================================================
+FAQ
+==================================================*/
+
+.faq{
+
+    background:var(--background);
+
+}
+
+.faq-container{
+
+    max-width:900px;
+
+    margin:70px auto 0;
+
+}
+
+.faq-item{
+
+    margin-bottom:20px;
+
+    border-radius:24px;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.faq-question{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:28px;
+
+    font-size:1.05rem;
+
+    font-weight:600;
+
+    color:var(--text);
+
+}
+
+.faq-icon{
+
+    font-size:1.6rem;
+
+    color:var(--primary);
+
+    transition:.3s;
+
+}
+
+.faq-answer{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:max-height .45s ease;
+
+}
+
+.faq-answer p{
+
+    padding:0 28px 28px;
+
+    line-height:1.9;
+
+}
+
+.faq-item.active .faq-answer{
+
+    max-height:300px;
+
+}
+
+.faq-item.active .faq-icon{
+
+    transform:rotate(45deg);
+
+}
+
+@media(max-width:768px){
+
+.faq-question{
+
+padding:22px;
+
+font-size:1rem;
+
+}
+
+.faq-answer p{
+
+padding:0 22px 22px;
+
+}
+
+      }
+      /*==================================================
+CONTACT
+==================================================*/
+
+.contact{
+
+    background:var(--section);
+
+}
+
+.contact-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+    margin-top:70px;
+
+}
+
+.contact-content p{
+
+    margin:28px 0 40px;
+
+}
+
+.contact-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+.contact-item{
+
+    padding:22px;
+
+    border-radius:22px;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+}
+
+.contact-item h4{
+
+    margin-bottom:8px;
+
+}
+
+.contact-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    padding:18px;
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    background:var(--background);
+
+    transition:.3s;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    border-color:var(--primary);
+
+}
+
+.contact-form textarea{
+
+    resize:none;
+
+}
+
+.contact-form button{
+
+    margin-top:10px;
+
+}
+
+@media(max-width:992px){
+
+.contact-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+  }
+      /*==================================================
+FOOTER
+==================================================*/
+
+.footer{
+
+    background:#111827;
+
+    color:#fff;
+
+    padding:90px 0 30px;
+
+}
+
+.footer-top{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1fr;
+
+    gap:50px;
+
+    padding-bottom:50px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-column p{
+
+    color:rgba(255,255,255,.72);
+
+    margin-top:20px;
+
+    line-height:1.9;
+
+}
+
+.footer-column h4{
+
+    color:#fff;
+
+    margin-bottom:22px;
+
+}
+
+.footer-column a{
+
+    display:block;
+
+    color:rgba(255,255,255,.72);
+
+    margin-bottom:14px;
+
+    transition:.3s;
+
+}
+
+.footer-column a:hover{
+
+    color:var(--sage);
+
+    transform:translateX(6px);
+
+}
+
+.footer-bottom{
+
+    margin-top:35px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-bottom p{
+
+    color:rgba(255,255,255,.6);
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    gap:24px;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-links a{
+
+    color:rgba(255,255,255,.7);
+
+}
+
+.footer-links a:hover{
+
+    color:var(--sage);
+
+}
+
+@media(max-width:992px){
+
+.footer-top{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.footer-top{
+
+grid-template-columns:1fr;
+
+}
+
+.footer-bottom{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+  }
+      /*==================================================
+REVEAL ANIMATION
+==================================================*/
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:all .8s ease;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+      /*==================================================
+BUTTON RIPPLE
+==================================================*/
+
+.btn-primary,
+.btn-secondary{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.ripple{
+
+position:absolute;
+
+border-radius:50%;
+
+transform:scale(0);
+
+background:rgba(255,255,255,.35);
+
+animation:ripple .6s linear;
+
+pointer-events:none;
+
+}
+
+@keyframes ripple{
+
+to{
+
+transform:scale(4);
+
+opacity:0;
+
+}
+
+}
+
+/*==================================================
+BACK TO TOP
+==================================================*/
+
+.back-to-top{
+
+position:fixed;
+
+right:24px;
+
+bottom:24px;
+
+width:54px;
+
+height:54px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+background:var(--primary);
+
+color:#fff;
+
+cursor:pointer;
+
+box-shadow:var(--shadow-lg);
+
+opacity:0;
+
+visibility:hidden;
+
+transition:.35s;
+
+z-index:999;
+
+}
+
+.back-to-top.show{
+
+opacity:1;
+
+visibility:visible;
+
+}
+
+.back-to-top:hover{
+
+transform:translateY(-5px);
+
+}
+
+/*==================================================
+ACTIVE NAVIGATION
+==================================================*/
+
+.nav-links a.active{
+
+color:var(--primary);
+
+}
+
+.nav-links a.active::after{
+
+width:100%;
+
+      }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!--==========================================
+    SCROLL PROGRESS
+    ===========================================-->
+
+    <div class="scroll-progress"></div>
+
+    <!--==========================================
+    HEADER
+    ===========================================-->
+
+    <header class="header">
+
+        <nav class="navbar container">
+
+            <!-- Brand -->
+
+            <a href="index.html"
+               class="brand"
+               aria-label="Noctis Technologies">
+
+                <div class="brand-text">
+
+                    <span class="brand-title">
+
+                        NOCTIS
+
+                    </span>
+
+                    <span class="brand-subtitle">
+
+                        Technologies
+
+                    </span>
+
+                </div>
+
+            </a>
+
+            <!-- Desktop Navigation -->
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html"
+                       class="active">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="solutions.html">
+                        Solutions
+                    </a>
+                </li>
+
+                <li>
+                    <a href="portfolio.html">
+                        Portfolio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pricing.html">
+                        Pricing
+                    </a>
+                </li>
+
+                <li>
+                    <a href="team.html">
+                        Team
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+            <!-- Right Side -->
+
+            <div class="nav-right">
+
+                <a href="contact.html"
+                   class="btn-primary">
+
+                    Let's Talk
+
+                </a>
+
+                <button class="menu-toggle"
+                        aria-label="Open Menu">
+
+                    <!-- SVG -->
+
+                    <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+
+                        <path d="M4 7H20"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"/>
+
+                        <path d="M4 12H20"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"/>
+
+                        <path d="M4 17H20"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"/>
+
+                    </svg>
+
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!--==========================================
+    MOBILE MENU
+    ===========================================-->
+
+    <aside class="mobile-menu">
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="solutions.html">Solutions</a>
+
+            <a href="portfolio.html">Portfolio</a>
+
+            <a href="pricing.html">Pricing</a>
+
+            <a href="team.html">Team</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="contact.html"
+               class="btn-primary">
+
+                Let's Talk
+
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main>
+      <!--==========================================
+HERO
+===========================================-->
+
+<section class="hero" id="home">
+
+    <div class="container">
+
+        <div class="hero-wrapper">
+
+            <!-- Left Content -->
+
+            <div class="hero-content">
+
+                <span class="hero-badge">
+
+                    Remote • Serving Clients Worldwide
+
+                </span>
+
+                <h1>
+
+                    Engineering
+                    Digital Experiences
+                    That Inspire Growth.
+
+                </h1>
+
+                <p>
+
+                    We design, develop, and deliver premium digital solutions that help businesses grow with confidence through modern technology, exceptional design, and intelligent innovation.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="contact.html"
+                       class="btn-primary">
+
+                        Let's Talk
+
+                    </a>
+
+                    <a href="portfolio.html"
+                       class="btn-secondary">
+
+                        Explore Our Work
+
+                    </a>
+
+                </div>
+
+                <div class="hero-info">
+
+                    <div class="hero-item">
+
+                        <h3>2+</h3>
+
+                        <span>
+                            Completed Projects
+                        </span>
+
+                    </div>
+
+                    <div class="hero-item">
+
+                        <h3>Remote</h3>
+
+                        <span>
+                            Global Collaboration
+                        </span>
+
+                    </div>
+
+                    <div class="hero-item">
+
+                        <h3>100%</h3>
+
+                        <span>
+                            Client Commitment
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right Visual -->
+
+            <div class="hero-visual">
+
+                <div class="hero-circle hero-circle-one"></div>
+
+                <div class="hero-circle hero-circle-two"></div>
+
+                <div class="hero-card card-one">
+
+                    <h4>
+
+                        Premium Websites
+
+                    </h4>
+
+                    <small>
+
+                        Modern • Responsive • SEO Ready
+
+                    </small>
+
+                </div>
+
+                <div class="hero-card card-two">
+
+                    <h4>
+
+                        AI Solutions
+
+                    </h4>
+
+                    <small>
+
+                        Intelligent Automation
+
+                    </small>
+
+                </div>
+
+                <div class="hero-card card-three">
+
+                    <h4>
+
+                        UI / UX Design
+
+                    </h4>
+
+                    <small>
+
+                        Elegant Digital Experiences
+
+                    </small>
+
+                </div>
+
+                <!-- SVG Illustration will be added later -->
+
+                <div class="hero-illustration">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+      <!--==========================================
+TECHNOLOGY ECOSYSTEM
+===========================================-->
+
+<section class="ecosystem">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-badge">
+
+                Technology Ecosystem
+
+            </span>
+
+            <h2>
+
+                Building with Modern Technologies
+
+            </h2>
+
+            <p>
+
+                We leverage trusted technologies, modern frameworks, cloud platforms, and AI tools to build secure, scalable, and future-ready digital solutions.
+
+            </p>
+
+        </div>
+
+        <div class="tech-marquee">
+
+            <div class="tech-track">
+
+                <div class="tech-item">HTML5</div>
+
+                <div class="tech-item">CSS3</div>
+
+                <div class="tech-item">JavaScript</div>
+
+                <div class="tech-item">React</div>
+
+                <div class="tech-item">Next.js</div>
+
+                <div class="tech-item">Node.js</div>
+
+                <div class="tech-item">Python</div>
+
+                <div class="tech-item">Laravel</div>
+
+                <div class="tech-item">Flutter</div>
+
+                <div class="tech-item">MongoDB</div>
+
+                <div class="tech-item">PostgreSQL</div>
+
+                <div class="tech-item">Supabase</div>
+
+                <div class="tech-item">Firebase</div>
+
+                <div class="tech-item">AWS</div>
+
+                <div class="tech-item">Docker</div>
+
+                <div class="tech-item">OpenAI</div>
+
+                <div class="tech-item">Gemini</div>
+
+                <div class="tech-item">Claude</div>
+
+                <div class="tech-item">Figma</div>
+
+                <div class="tech-item">GitHub</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+      <!--==========================================
+WHY NOCTIS
+===========================================-->
+
+<section class="why-noctis" id="about">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-badge">
+
+                Why Noctis Technologies
+
+            </span>
+
+            <h2>
+
+                Building Digital Success Through Innovation,
+                Strategy & Technology.
+
+            </h2>
+
+            <p>
+
+                At Noctis Technologies, we believe every business deserves a powerful digital identity. Our team combines creativity, engineering, and intelligent technology to deliver premium digital solutions that inspire confidence, improve customer engagement, and support long-term business growth.
+
+            </p>
+
+        </div>
+
+        <div class="why-grid">
+
+            <!-- Card 01 -->
+
+            <article class="why-card">
+
+                <div class="why-icon">
+
+                    <svg width="68"
+                         height="68"
+                         viewBox="0 0 68 68"
+                         fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+
+                        <rect width="68"
+                              height="68"
+                              rx="18"
+                              fill="#EEF2EB"/>
+
+                        <path d="M20 42L34 24L48 42"
+                              stroke="#2F66F3"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"/>
+
+                        <path d="M27 42H41"
+                              stroke="#98A38E"
+                              stroke-width="3"
+                              stroke-linecap="round"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>
+
+                    Premium Design
+
+                </h3>
+
+                <p>
+
+                    Elegant, modern, and responsive digital experiences crafted to build trust and strengthen your brand identity.
+
+                </p>
+
+            </article>
+
+            <!-- Card 02 -->
+
+            <article class="why-card">
+
+                <div class="why-icon">
+
+                    <svg width="68"
+                         height="68"
+                         viewBox="0 0 68 68"
+                         fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+
+                        <rect width="68"
+                              height="68"
+                              rx="18"
+                              fill="#EEF2EB"/>
+
+                        <path d="M20 34H48"
+                              stroke="#2F66F3"
+                              stroke-width="3"
+                              stroke-linecap="round"/>
+
+                        <path d="M34 20V48"
+                              stroke="#98A38E"
+                              stroke-width="3"
+                              stroke-linecap="round"/>
+
+                        <circle cx="34"
+                                cy="34"
+                                r="8"
+                                fill="#2F66F3"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>
+
+                    Scalable Development
+
+                </h3>
+
+                <p>
+
+                    Future-ready websites and software engineered to scale as your business grows and evolves.
+
+                </p>
+
+            </article>
+
+            <!-- Card 03 -->
+
+            <article class="why-card">
+
+                <div class="why-icon">
+
+                    <svg width="68"
+                         height="68"
+                         viewBox="0 0 68 68"
+                         fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+
+                        <rect width="68"
+                              height="68"
+                              rx="18"
+                              fill="#EEF2EB"/>
+
+                        <circle cx="34"
+                                cy="34"
+                                r="12"
+                                stroke="#2F66F3"
+                                stroke-width="3"/>
+
+                        <path d="M34 18V10M34 58V50M18 34H10M58 34H50"
+                              stroke="#98A38E"
+                              stroke-width="3"
+                              stroke-linecap="round"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>
+
+                    AI Driven Innovation
+
+                </h3>
+
+                <p>
+
+                    Smart automation and AI-powered workflows that improve productivity and deliver exceptional customer experiences.
+
+                </p>
+
+            </article>
+
+            <!-- Card 04 -->
+
+            <article class="why-card">
+
+                <div class="why-icon">
+
+                    <svg width="68"
+                         height="68"
+                         viewBox="0 0 68 68"
+                         fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+
+                        <rect width="68"
+                              height="68"
+                              rx="18"
+                              fill="#EEF2EB"/>
+
+                        <path d="M22 34L30 42L46 26"
+                              stroke="#2F66F3"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"/>
+
+                        <circle cx="34"
+                                cy="34"
+                                r="18"
+                                stroke="#98A38E"
+                                stroke-width="2"/>
+
+                    </svg>
+
+                </div>
+
+                <h3>
+
+                    Trusted Partnership
+
+                </h3>
+
+                <p>
+
+                    We focus on long-term relationships built through transparency, quality, continuous support, and shared success.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+      <!--==========================================
+SERVICES
+===========================================-->
+
+<section class="services" id="services">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-badge">
+
+                Our Services
+
+            </span>
+
+            <h2>
+
+                Complete Digital Solutions
+                For Modern Businesses
+
+            </h2>
+
+            <p>
+
+                From premium websites to intelligent AI solutions, Noctis Technologies delivers end-to-end digital services designed to help businesses establish a powerful online presence, improve efficiency, and accelerate growth.
+
+            </p>
+
+        </div>
+
+        <div class="services-grid">
+
+            <article class="service-card featured">
+
+                <div class="service-icon">
+
+                    <!-- Premium Website SVG -->
+
+                </div>
+
+                <h3>
+
+                    Premium Website Development
+
+                </h3>
+
+                <p>
+
+                    High-performance websites designed for speed, SEO, accessibility, and exceptional user experience.
+
+                </p>
+
+                <span>
+
+                    Responsive • SEO Ready • Modern
+
+                </span>
+
+            </article>
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <!-- AI SVG -->
+
+                </div>
+
+                <h3>
+
+                    AI Solutions & Automation
+
+                </h3>
+
+                <p>
+
+                    Intelligent automation, AI assistants, chatbots, and workflow optimization for businesses.
+
+                </p>
+
+                <span>
+
+                    AI • Automation • Productivity
+
+                </span>
+
+            </article>
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <!-- UI SVG -->
+
+                </div>
+
+                <h3>
+
+                    UI / UX Design
+
+                </h3>
+
+                <p>
+
+                    Elegant digital interfaces focused on usability, accessibility, and memorable customer experiences.
+
+                </p>
+
+                <span>
+
+                    Modern • Premium • Interactive
+
+                </span>
+
+            </article>
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <!-- Web App SVG -->
+
+                </div>
+
+                <h3>
+
+                    Web Applications
+
+                </h3>
+
+                <p>
+
+                    Secure and scalable web applications tailored to your business requirements and future growth.
+
+                </p>
+
+                <span>
+
+                    Secure • Fast • Scalable
+
+                </span>
+
+            </article>
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <!-- Ecommerce SVG -->
+
+                </div>
+
+                <h3>
+
+                    E-Commerce Solutions
+
+                </h3>
+
+                <p>
+
+                    Online stores designed to increase conversions, improve customer experience, and simplify management.
+
+                </p>
+
+                <span>
+
+                    Sell • Manage • Grow
+
+                </span>
+
+            </article>
+
+            <article class="service-card">
+
+                <div class="service-icon">
+
+                    <!-- Support SVG -->
+
+                </div>
+
+                <h3>
+
+                    Maintenance & Support
+
+                </h3>
+
+                <p>
+
+                    Continuous improvements, updates, monitoring, security, and long-term technical support.
+
+                </p>
+
+                <span>
+
+                    Reliable • Secure • Continuous
+
+                </span>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+      <!--==========================================
+SOLUTIONS
+===========================================-->
+
+<section class="solutions" id="solutions">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-badge">
+
+                Business Solutions
+
+            </span>
+
+            <h2>
+
+                Digital Solutions Built
+                Around Your Business.
+
+            </h2>
+
+            <p>
+
+                Every business is unique. That's why we create tailored digital solutions designed to match your goals, improve efficiency, strengthen your brand, and support long-term growth.
+
+            </p>
+
+        </div>
+
+        <div class="solutions-grid">
+
+            <article class="solution-card">
+
+                <div class="solution-icon">
+
+                    <!-- Premium Shop SVG -->
+
+                </div>
+
+                <h3>
+
+                    Small Businesses
+
+                </h3>
+
+                <p>
+
+                    Affordable digital solutions that help local businesses establish a professional online identity.
+
+                </p>
+
+            </article>
+
+            <article class="solution-card featured">
+
+                <div class="solution-icon">
+
+                    <!-- Startup SVG -->
+
+                </div>
+
+                <h3>
+
+                    Startups
+
+                </h3>
+
+                <p>
+
+                    MVPs, landing pages, branding, web applications, and scalable technology for growing startups.
+
+                </p>
+
+            </article>
+
+            <article class="solution-card">
+
+                <div class="solution-icon">
+
+                    <!-- Store SVG -->
+
+                </div>
+
+                <h3>
+
+                    E-Commerce
+
+                </h3>
+
+                <p>
+
+                    Modern online stores with premium shopping experiences and optimized conversions.
+
+                </p>
+
+            </article>
+
+            <article class="solution-card">
+
+                <div class="solution-icon">
+
+                    <!-- Healthcare SVG -->
+
+                </div>
+
+                <h3>
+
+                    Healthcare
+
+                </h3>
+
+                <p>
+
+                    Secure healthcare websites, appointment systems, and digital patient experiences.
+
+                </p>
+
+            </article>
+
+            <article class="solution-card">
+
+                <div class="solution-icon">
+
+                    <!-- Education SVG -->
+
+                </div>
+
+                <h3>
+
+                    Education
+
+                </h3>
+
+                <p>
+
+                    Digital platforms for schools, institutions, academies, and online learning.
+
+                </p>
+
+            </article>
+
+            <article class="solution-card">
+
+                <div class="solution-icon">
+
+                    <!-- Enterprise SVG -->
+
+                </div>
+
+                <h3>
+
+                    Enterprise
+
+                </h3>
+
+                <p>
+
+                    Custom software, automation, AI integration, and enterprise-grade web solutions.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+      <!--==========================================
+PORTFOLIO
+===========================================-->
+
+<section class="portfolio" id="portfolio">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-badge">
+
+                Featured Projects
+
+            </span>
+
+            <h2>
+
+                Real Projects.
+                Real Results.
+
+            </h2>
+
+            <p>
+
+                Every project represents our commitment to quality, performance, and helping businesses build a stronger digital identity through modern technology.
+
+            </p>
+
+        </div>
+
+        <div class="portfolio-grid">
+
+            <!-- Project 01 -->
+
+            <article class="project-card featured">
+
+                <div class="project-preview">
+
+                    <!-- Premium Browser SVG -->
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+
+                        Business Website
+
+                    </span>
+
+                    <h3>
+
+                        Central Stores
+
+                    </h3>
+
+                    <p>
+
+                        A responsive e-commerce platform designed for a grocery business with product browsing, shopping cart, category management, and a fast mobile-first experience.
+
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>HTML5</span>
+
+                        <span>CSS3</span>
+
+                        <span>JavaScript</span>
+
+                    </div>
+
+                    <a href="#">
+
+                        View Project →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Project 02 -->
+
+            <article class="project-card">
+
+                <div class="project-preview">
+
+                    <!-- Premium Browser SVG -->
+
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+
+                        Digital Platform
+
+                    </span>
+
+                    <h3>
+
+                        Mahalaxmi Foundation
+
+                    </h3>
+
+                    <p>
+
+                        A modern digital platform created to connect users with opportunities through a clean interface and optimized responsive experience.
+
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>HTML5</span>
+
+                        <span>CSS3</span>
+
+                        <span>JavaScript</span>
+
+                    </div>
+
+                    <a href="#">
+
+                        View Project →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+      <!--==========================================
+PROCESS
+===========================================-->
+
+<section class="process" id="process">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-badge">
+                Our Process
+            </span>
+
+            <h2>
+
+                A Simple Process.
+                Exceptional Results.
+
+            </h2>
+
+            <p>
+
+                Every project follows a structured workflow to ensure clarity, collaboration, and high-quality delivery from the first conversation to the final launch.
+
+            </p>
+
+        </div>
+
+        <div class="process-line"></div>
+
+        <div class="process-grid">
+
+            <article class="process-card">
+
+                <div class="step-number">01</div>
+
+                <div class="process-icon">
+                    <!-- SVG -->
+                </div>
+
+                <h3>Discover</h3>
+
+                <p>
+                    Understanding your business, goals, audience, and project requirements.
+                </p>
+
+            </article>
+
+            <article class="process-card">
+
+                <div class="step-number">02</div>
+
+                <div class="process-icon">
+                    <!-- SVG -->
+                </div>
+
+                <h3>Strategy</h3>
+
+                <p>
+                    Planning architecture, user experience, technology stack, and project roadmap.
+                </p>
+
+            </article>
+
+            <article class="process-card">
+
+                <div class="step-number">03</div>
+
+                <div class="process-icon">
+                    <!-- SVG -->
+                </div>
+
+                <h3>Design</h3>
+
+                <p>
+                    Creating elegant UI/UX that reflects your brand and improves user engagement.
+                </p>
+
+            </article>
+
+            <article class="process-card">
+
+                <div class="step-number">04</div>
+
+                <div class="process-icon">
+                    <!-- SVG -->
+                </div>
+
+                <h3>Develop</h3>
+
+                <p>
+                    Building fast, secure, scalable, and responsive digital solutions.
+                </p>
+
+            </article>
+
+            <article class="process-card">
+
+                <div class="step-number">05</div>
+
+                <div class="process-icon">
+                    <!-- SVG -->
+                </div>
+
+                <h3>Launch</h3>
+
+                <p>
+                    Testing, optimization, deployment, and continuous support after launch.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+      <!--==========================================
+PRICING
+===========================================-->
+
+<section class="pricing" id="pricing">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-badge">
+
+                Transparent Pricing
+
+            </span>
+
+            <h2>
+
+                Premium Digital Solutions
+                For Every Business
+
+            </h2>
+
+            <p>
+
+                Flexible pricing designed to help startups, local businesses, and growing companies build a strong digital identity with confidence.
+
+            </p>
+
+        </div>
+
+        <div class="pricing-banner">
+
+            <span>Website Development starts from</span>
+
+            <h2>₹1,999/-</h2>
+
+        </div>
+
+        <div class="pricing-grid">
+
+            <article class="price-card">
+
+                <span class="plan">
+
+                    Starter
+
+                </span>
+
+                <h3>₹1,999</h3>
+
+                <p>
+
+                    Perfect for personal brands and small businesses.
+
+                </p>
+
+                <ul>
+
+                    <li>✓ Responsive Website</li>
+
+                    <li>✓ Up to 5 Pages</li>
+
+                    <li>✓ Contact Form</li>
+
+                    <li>✓ Basic SEO</li>
+
+                    <li>✓ 30 Days Support</li>
+
+                </ul>
+
+                <a href="contact.html"
+                   class="btn-primary">
+
+                    Get Started
+
+                </a>
+
+            </article>
+
+            <article class="price-card featured">
+
+                <span class="popular">
+
+                    Most Popular
+
+                </span>
+
+                <span class="plan">
+
+                    Business
+
+                </span>
+
+                <h3>₹4,999</h3>
+
+                <p>
+
+                    Complete business website with premium features.
+
+                </p>
+
+                <ul>
+
+                    <li>✓ Up to 12 Pages</li>
+
+                    <li>✓ Premium UI/UX</li>
+
+                    <li>✓ SEO Optimized</li>
+
+                    <li>✓ WhatsApp Integration</li>
+
+                    <li>✓ 60 Days Support</li>
+
+                </ul>
+
+                <a href="contact.html"
+                   class="btn-primary">
+
+                    Let's Talk
+
+                </a>
+
+            </article>
+
+            <article class="price-card">
+
+                <span class="plan">
+
+                    Enterprise
+
+                </span>
+
+                <h3>Custom</h3>
+
+                <p>
+
+                    Tailored digital solutions for large-scale businesses.
+
+                </p>
+
+                <ul>
+
+                    <li>✓ Unlimited Pages</li>
+
+                    <li>✓ Custom Development</li>
+
+                    <li>✓ AI Integration</li>
+
+                    <li>✓ API Integration</li>
+
+                    <li>✓ Priority Support</li>
+
+                </ul>
+
+                <a href="contact.html"
+                   class="btn-primary">
+
+                    Contact Us
+
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+      <!--==========================================
+TEAM
+===========================================-->
+
+<section class="team" id="team">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-badge">
+
+                Meet Our Team
+
+            </span>
+
+            <h2>
+
+                Passionate People.
+                Exceptional Digital Experiences.
+
+            </h2>
+
+            <p>
+
+                Behind every successful project is a dedicated team committed to delivering innovative, reliable, and premium digital solutions.
+
+            </p>
+
+        </div>
+
+        <div class="team-grid">
+
+            <!-- Member 01 -->
+
+            <article class="team-card">
+
+                <div class="team-avatar">
+
+                    <!-- SVG Avatar -->
+
+                </div>
+
+                <h3>
+
+                    Sam Immanuel J
+
+                </h3>
+
+                <span>
+
+                    Web Developer & UI/UX Designer
+
+                </span>
+
+                <p>
+
+                    Creates premium websites, intuitive user experiences, and modern digital interfaces focused on performance and usability.
+
+                </p>
+
+            </article>
+
+            <!-- Member 02 -->
+
+            <article class="team-card featured">
+
+                <div class="team-avatar">
+
+                    <!-- SVG Avatar -->
+
+                </div>
+
+                <h3>
+
+                    Backend Developer
+
+                </h3>
+
+                <span>
+
+                    Backend Development
+
+                </span>
+
+                <p>
+
+                    Builds secure APIs, scalable backend systems, databases, authentication, and cloud infrastructure.
+
+                </p>
+
+            </article>
+
+            <!-- Member 03 -->
+
+            <article class="team-card">
+
+                <div class="team-avatar">
+
+                    <!-- SVG Avatar -->
+
+                </div>
+
+                <h3>
+
+                    Operations
+
+                </h3>
+
+                <span>
+
+                    Operations & Administration
+
+                </span>
+
+                <p>
+
+                    Coordinates internal operations, documentation, workflows, and project execution.
+
+                </p>
+
+            </article>
+
+            <!-- Member 04 -->
+
+            <article class="team-card">
+
+                <div class="team-avatar">
+
+                    <!-- SVG Avatar -->
+
+                </div>
+
+                <h3>
+
+                    Business Development
+
+                </h3>
+
+                <span>
+
+                    Client Relations
+
+                </span>
+
+                <p>
+
+                    Builds relationships, prepares proposals, and helps businesses discover the right digital solutions.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+  <!--==========================================
+CLIENT FEEDBACK
+===========================================-->
+
+<section class="testimonials" id="testimonials">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-badge">
+
+                Client Feedback
+
+            </span>
+
+            <h2>
+
+                Building Trust Through
+                Every Project.
+
+            </h2>
+
+            <p>
+
+                Every successful collaboration strengthens our commitment to delivering quality, innovation, and exceptional digital experiences.
+
+            </p>
+
+        </div>
+
+        <div class="testimonial-grid">
+
+            <article class="testimonial-card">
+
+                <div class="quote-mark">
+
+                    “
+
+                </div>
+
+                <p>
+
+                    Your future client testimonial will appear here after successful project completion.
+
+                </p>
+
+                <div class="testimonial-user">
+
+                    <div class="user-avatar">
+
+                        C
+
+                    </div>
+
+                    <div>
+
+                        <h4>
+
+                            Your Client
+
+                        </h4>
+
+                        <span>
+
+                            Business Owner
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="testimonial-card featured">
+
+                <div class="quote-mark">
+
+                    “
+
+                </div>
+
+                <p>
+
+                    We believe trust is earned through quality work, transparent communication, and long-term relationships.
+
+                </p>
+
+                <div class="testimonial-user">
+
+                    <div class="user-avatar">
+
+                        N
+
+                    </div>
+
+                    <div>
+
+                        <h4>
+
+                            Noctis Technologies
+
+                        </h4>
+
+                        <span>
+
+                            Our Commitment
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+            <article class="testimonial-card">
+
+                <div class="quote-mark">
+
+                    “
+
+                </div>
+
+                <p>
+
+                    Real customer reviews will be showcased here as our portfolio continues to grow.
+
+                </p>
+
+                <div class="testimonial-user">
+
+                    <div class="user-avatar">
+
+                        C
+
+                    </div>
+
+                    <div>
+
+                        <h4>
+
+                            Future Client
+
+                        </h4>
+
+                        <span>
+
+                            Coming Soon
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+  <!--==========================================
+FAQ
+===========================================-->
+
+<section class="faq" id="faq">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-badge">
+
+                Frequently Asked Questions
+
+            </span>
+
+            <h2>
+
+                Everything You Need
+                To Know
+
+            </h2>
+
+            <p>
+
+                Find answers to the most common questions about our services, workflow, pricing, and project delivery.
+
+            </p>
+
+        </div>
+
+        <div class="faq-container">
+
+            <div class="faq-item active">
+
+                <button class="faq-question">
+
+                    <span>What services does Noctis Technologies provide?</span>
+
+                    <span class="faq-icon">+</span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        We provide website development, UI/UX design, web applications, AI solutions, e-commerce development, digital transformation, maintenance, and technical consulting.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    <span>How long does a project usually take?</span>
+
+                    <span class="faq-icon">+</span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Project timelines depend on the scope and complexity. Smaller websites are generally completed faster than larger custom platforms.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    <span>Do you provide support after delivery?</span>
+
+                    <span class="faq-icon">+</span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Yes. We provide post-launch support, maintenance, updates, and technical assistance based on the selected package.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    <span>Can you redesign an existing website?</span>
+
+                    <span class="faq-icon">+</span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Absolutely. We can modernize existing websites with improved design, performance, responsiveness, accessibility, and SEO.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    <span>How do we get started?</span>
+
+                    <span class="faq-icon">+</span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Contact us through our website. We'll discuss your requirements, recommend the best solution, and guide you through the complete development process.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+  <!--==========================================
+CONTACT
+===========================================-->
+
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="contact-wrapper">
+
+            <!-- Left -->
+
+            <div class="contact-content">
+
+                <span class="section-badge">
+
+                    Let's Build Together
+
+                </span>
+
+                <h2>
+
+                    Ready To Start
+                    Your Next Project?
+
+                </h2>
+
+                <p>
+
+                    Whether you're launching a new business, redesigning your website, or building a custom digital solution, we're here to help transform your ideas into reality.
+
+                </p>
+
+                <div class="contact-info">
+
+                    <div class="contact-item">
+
+                        <h4>Email</h4>
+
+                        <span>Available Soon</span>
+
+                    </div>
+
+                    <div class="contact-item">
+
+                        <h4>Phone</h4>
+
+                        <span>Available Soon</span>
+
+                    </div>
+
+                    <div class="contact-item">
+
+                        <h4>Location</h4>
+
+                        <span>Tirupur, Tamil Nadu, India (Remote)</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+
+            <form class="contact-form">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                    required>
+
+                <input
+                    type="text"
+                    placeholder="Business Name">
+
+                <textarea
+                    rows="6"
+                    placeholder="Tell us about your project..."
+                    required></textarea>
+
+                <button
+                    type="submit"
+                    class="btn-primary">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+  <!--==========================================
+FOOTER
+===========================================-->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <!-- Company -->
+
+            <div class="footer-column">
+
+                <a href="index.html" class="brand">
+
+                    <div class="brand-text">
+
+                        <span class="brand-title">
+
+                            NOCTIS
+
+                        </span>
+
+                        <span class="brand-subtitle">
+
+                            Technologies
+
+                        </span>
+
+                    </div>
+
+                </a>
+
+                <p>
+
+                    Engineering Digital Experiences That Inspire Growth.
+
+                    We build premium websites, intelligent software, AI-powered solutions, and digital experiences that help businesses grow with confidence.
+
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h4>
+
+                    Quick Links
+
+                </h4>
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="services.html">Services</a>
+
+                <a href="solutions.html">Solutions</a>
+
+                <a href="portfolio.html">Portfolio</a>
+
+                <a href="pricing.html">Pricing</a>
+
+                <a href="team.html">Team</a>
+
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+            <!-- Services -->
+
+            <div class="footer-column">
+
+                <h4>
+
+                    Services
+
+                </h4>
+
+                <a href="#">Website Development</a>
+
+                <a href="#">UI / UX Design</a>
+
+                <a href="#">Web Applications</a>
+
+                <a href="#">AI Solutions</a>
+
+                <a href="#">E-Commerce</a>
+
+                <a href="#">Maintenance</a>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div class="footer-column">
+
+                <h4>
+
+                    Company
+
+                </h4>
+
+                <p>
+
+                    Remote First Company
+
+                </p>
+
+                <p>
+
+                    Tirupur, Tamil Nadu, India
+
+                </p>
+
+                <p>
+
+                    Business Email
+                    <br>
+                    Available Soon
+
+                </p>
+
+                <p>
+
+                    Business Phone
+                    <br>
+                    Available Soon
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 Noctis Technologies. All Rights Reserved.
+
+            </p>
+
+            <div class="footer-links">
+
+                <a href="#">
+
+                    Privacy Policy
+
+                </a>
+
+                <a href="#">
+
+                    Terms & Conditions
+
+                </a>
+
+                <a href="#">
+
+                    Cookies
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
