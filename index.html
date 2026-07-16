@@ -3842,6 +3842,37 @@ color:var(--primary);
 width:100%;
 
       }
+        .price-counter{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:4px;
+
+    font-size:clamp(3rem,7vw,5rem);
+
+    font-weight:800;
+
+    color:#fff;
+
+}
+
+.price-counter .counter{
+
+    min-width:170px;
+
+    display:inline-block;
+
+    text-align:center;
+
+    font-variant-numeric:tabular-nums;
+
+    letter-spacing:.05em;
+
+    }
 
     </style>
 
@@ -5172,12 +5203,11 @@ PRICING
 
                 </span>
 
-                <h3>
+<h3 class="price-counter">
 
     ₹<span class="counter" data-target="1999">0</span>/-
 
-                </h3>
-
+</h3>
                 <p>
 
                     Perfect for personal brands and small businesses.
