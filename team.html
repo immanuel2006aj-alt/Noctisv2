@@ -12812,6 +12812,45 @@ body.menu-open{
 .coordination-profile-placeholder span{
     display:none;
 }
+        /* ===========================
+   MOBILE TEAM FIX
+=========================== */
+
+@media (max-width: 620px) {
+
+    .team-member-card {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .team-member-image {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        overflow: hidden;
+    }
+
+    .team-member-image img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .team-member-role-label {
+        position: absolute;
+        left: 16px;
+        bottom: 16px;
+        z-index: 100;
+    }
+
+    .team-member-content {
+        padding: 26px;
+    }
+
+    }
       </style>
       <body>
         <!--==================================================
