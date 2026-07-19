@@ -1035,4 +1035,44 @@ FINAL STARTUP
 
     }
 
-})();
+}));
+/*==================================================
+PART 6C
+FINAL CLEANUP
+==================================================*/
+
+const TEAM_JS_VERSION="2.0.0";
+
+Object.freeze({
+
+    TEAM_JS_VERSION
+
+});
+
+console.info(
+
+    `Team.js v${TEAM_JS_VERSION} Ready`
+
+);
+
+window.addEventListener(
+
+    "load",
+
+    ()=>{
+
+        document.body.classList.add(
+
+            "page-loaded"
+
+        );
+
+    },
+
+    {
+
+        once:true
+
+    }
+
+);
