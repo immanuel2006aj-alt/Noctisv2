@@ -1,0 +1,8652 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<html>
+
+    <!--==================================================
+    BASIC META
+    ==================================================-->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+
+    <meta name="theme-color"
+          content="#2F66F3">
+
+
+    <!--==================================================
+    SEO
+    ==================================================-->
+
+    <title>About | Noctis Technologies</title>
+
+    <meta name="description"
+          content="Learn about Noctis Technologies, a modern digital technology company specializing in website development, UI/UX design, digital solutions, business automation, and innovative technology services.">
+
+    <meta name="keywords"
+          content="Noctis Technologies, About Noctis Technologies, Website Development, UI UX Design, Digital Solutions, Business Technology">
+
+    <meta name="author"
+          content="Noctis Technologies">
+
+    <meta name="robots"
+          content="index, follow">
+
+
+    <!--==================================================
+    OPEN GRAPH
+    ==================================================-->
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:title"
+          content="About | Noctis Technologies">
+
+    <meta property="og:description"
+          content="Discover Noctis Technologies and our mission to build modern digital experiences and technology solutions that help businesses grow.">
+
+
+    <!--==================================================
+    GOOGLE FONTS
+    ==================================================-->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+<link rel="stylesheet" href="navigation.css">
+<link rel="stylesheet" href="footer.css">
+
+    <!--==================================================
+    FAVICON
+    ==================================================-->
+
+    <link rel="icon"
+          type="image/svg+xml"
+          href="favicon.svg">
+
+
+    <!--==================================================
+    CSS
+    ==================================================-->
+
+    <style>
+      /*==================================================
+ROOT VARIABLES
+==================================================*/
+
+:root{
+
+    /*==================================================
+    BRAND COLORS
+    ==================================================*/
+
+    --primary:#2F66F3;
+    --primary-light:#5A8CFF;
+    --primary-dark:#214FCC;
+
+    --secondary:#5C6AC4;
+
+
+    /*==================================================
+    ACCENT
+    ==================================================*/
+
+    --sage:#AEB8A4;
+    --sage-dark:#98A38E;
+    --sage-light:#D8DDD3;
+    --sage-soft:#EEF2EB;
+
+
+    /*==================================================
+    BACKGROUND
+    ==================================================*/
+
+    --background:#FCFCFB;
+    --section:#F7F8F6;
+    --surface:#FFFFFF;
+    --card:#FFFFFF;
+
+
+    /*==================================================
+    TEXT
+    ==================================================*/
+
+    --text:#1A1A1A;
+    --text-light:#6E737B;
+    --text-muted:#9EA3AA;
+
+
+    /*==================================================
+    STATUS
+    ==================================================*/
+
+    --success:#22C55E;
+    --warning:#F59E0B;
+    --danger:#EF4444;
+
+
+    /*==================================================
+    BORDER
+    ==================================================*/
+
+    --border:#E7E9EC;
+    --divider:#F2F4F6;
+
+
+    /*==================================================
+    SHADOWS
+    ==================================================*/
+
+    --shadow-xs:0 2px 10px rgba(17,24,39,.04);
+
+    --shadow-sm:0 8px 20px rgba(17,24,39,.06);
+
+    --shadow:0 15px 40px rgba(17,24,39,.08);
+
+    --shadow-lg:0 25px 80px rgba(17,24,39,.12);
+
+
+    /*==================================================
+    GLOW
+    ==================================================*/
+
+    --blue-glow:0 0 60px rgba(47,102,243,.18);
+
+    --sage-glow:0 0 60px rgba(174,184,164,.20);
+
+
+    /*==================================================
+    GLASS
+    ==================================================*/
+
+    --glass:rgba(255,255,255,.72);
+
+    --glass-border:rgba(255,255,255,.65);
+
+    --blur:blur(22px);
+
+
+    /*==================================================
+    RADIUS
+    ==================================================*/
+
+    --radius-xs:12px;
+    --radius-sm:18px;
+    --radius:24px;
+    --radius-lg:32px;
+    --radius-xl:40px;
+
+
+    /*==================================================
+    SPACING
+    ==================================================*/
+
+    --space-1:8px;
+    --space-2:16px;
+    --space-3:24px;
+    --space-4:32px;
+    --space-5:48px;
+    --space-6:64px;
+    --space-7:96px;
+    --space-8:120px;
+
+
+    /*==================================================
+    LAYOUT
+    ==================================================*/
+
+    --container:1320px;
+
+    --header-height:90px;
+
+
+    /*==================================================
+    ANIMATION
+    ==================================================*/
+
+    --transition:.35s ease;
+
+}
+
+
+/*==================================================
+GLOBAL CSS
+==================================================*/
+
+
+/*==================================================
+RESET
+==================================================*/
+
+*,
+*::before,
+*::after{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+html{
+
+    font-size:16px;
+
+    scroll-behavior:smooth;
+
+    scroll-padding-top:var(--header-height);
+
+}
+
+
+body{
+
+    font-family:"Inter",sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+    text-rendering:optimizeLegibility;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+}
+
+
+/*==================================================
+TYPOGRAPHY
+==================================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-weight:700;
+
+    color:var(--text);
+
+    line-height:1.08;
+
+    letter-spacing:-.03em;
+
+}
+
+
+h1{
+
+    font-size:clamp(3rem,8vw,6rem);
+
+}
+
+
+h2{
+
+    font-size:clamp(2.3rem,5vw,4rem);
+
+}
+
+
+h3{
+
+    font-size:clamp(1.45rem,3vw,2rem);
+
+}
+
+
+h4{
+
+    font-size:1.15rem;
+
+}
+
+
+p{
+
+    color:var(--text-light);
+
+    font-size:1rem;
+
+    line-height:1.9;
+
+}
+
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+    transition:var(--transition);
+
+}
+
+
+ul{
+
+    list-style:none;
+
+}
+
+
+img{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+}
+
+
+svg{
+
+    display:block;
+
+    flex-shrink:0;
+
+}
+
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    font:inherit;
+
+    cursor:pointer;
+
+}
+
+
+input,
+textarea,
+select{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    font:inherit;
+
+}
+
+
+/*==================================================
+LAYOUT
+==================================================*/
+
+.container{
+
+    width:min(92%,var(--container));
+
+    margin-inline:auto;
+
+}
+
+
+section{
+
+    position:relative;
+
+    padding:120px 0;
+
+}
+
+
+/*==================================================
+SECTION HEADING
+==================================================*/
+
+.section-heading{
+
+    max-width:760px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+
+.section-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:12px 22px;
+
+    margin-bottom:24px;
+
+    border-radius:999px;
+
+    background:var(--sage-soft);
+
+    border:1px solid var(--sage-light);
+
+    color:var(--sage-dark);
+
+    font-size:.92rem;
+
+    font-weight:600;
+
+}
+
+
+.section-heading h2{
+
+    margin-bottom:20px;
+
+}
+
+
+.section-heading p{
+
+    max-width:680px;
+
+    margin:auto;
+
+}
+
+
+/*==================================================
+BUTTONS
+==================================================*/
+
+.btn-primary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:54px;
+
+    padding:0 30px;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff;
+
+    font-weight:600;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition);
+
+}
+
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+
+.btn-secondary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:54px;
+
+    padding:0 30px;
+
+    border-radius:999px;
+
+    border:1px solid var(--border);
+
+    background:#fff;
+
+    color:var(--text);
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+
+.btn-secondary:hover{
+
+    color:var(--primary);
+
+    border-color:var(--primary);
+
+    transform:translateY(-4px);
+
+}
+
+
+/*==================================================
+SCROLLBAR
+==================================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+
+::-webkit-scrollbar-track{
+
+    background:var(--section);
+
+}
+
+
+::-webkit-scrollbar-thumb{
+
+    background:linear-gradient(
+        var(--primary),
+        var(--sage)
+    );
+
+    border-radius:999px;
+
+}
+
+
+/*==================================================
+TEXT SELECTION
+==================================================*/
+
+::selection{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+
+/*==================================================
+FOCUS
+==================================================*/
+
+:focus-visible{
+
+    outline:3px solid rgba(47,102,243,.35);
+
+    outline-offset:4px;
+
+}
+
+
+/*==================================================
+GLOBAL RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+    .container{
+
+        width:94%;
+
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    section{
+
+        padding:90px 0;
+
+    }
+
+}
+
+
+@media(max-width:480px){
+
+    html{
+
+        font-size:15px;
+
+    }
+
+    section{
+
+        padding:75px 0;
+
+    }
+
+    .section-heading{
+
+        margin-bottom:50px;
+
+    }
+
+      }
+      /*==================================================
+HEADER
+==================================================*/
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    padding:20px 0;
+
+    transition:all .35s ease;
+
+}
+
+.header.scrolled{
+
+    padding:14px 0;
+
+}
+
+
+/*==================================================
+NAVBAR
+==================================================*/
+
+.navbar{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+    height:72px;
+
+    padding:0 26px;
+
+    background:rgba(255,255,255,.78);
+
+    backdrop-filter:blur(24px);
+
+    -webkit-backdrop-filter:blur(24px);
+
+    border:1px solid rgba(255,255,255,.65);
+
+    border-radius:999px;
+
+    box-shadow:
+    var(--shadow),
+    inset 0 1px rgba(255,255,255,.9);
+
+}
+
+
+/*==================================================
+LOGO
+==================================================*/
+
+.brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    flex-shrink:0;
+
+}
+
+.brand img{
+
+    width:48px;
+
+    height:48px;
+
+    object-fit:contain;
+
+}
+
+.brand-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+    line-height:1;
+
+}
+
+.brand-title{
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:1.18rem;
+
+    font-weight:700;
+
+    letter-spacing:.22em;
+
+    text-transform:uppercase;
+
+}
+
+.brand-subtitle{
+
+    margin-top:6px;
+
+    font-size:.84rem;
+
+    color:var(--sage-dark);
+
+    letter-spacing:.08em;
+
+}
+
+
+/*==================================================
+DESKTOP NAVIGATION
+==================================================*/
+
+.nav-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:34px;
+
+}
+
+.nav-links li{
+
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    position:relative;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    color:var(--text-light);
+
+    transition:.35s;
+
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+
+    color:var(--primary);
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--sage)
+    );
+
+    transition:.35s;
+
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after{
+
+    width:100%;
+
+}
+
+
+/*==================================================
+RIGHT AREA
+==================================================*/
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+
+/*==================================================
+MENU TOGGLE
+==================================================*/
+
+.menu-toggle{
+
+    display:none;
+
+    width:52px;
+
+    height:52px;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    color:var(--text);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-xs);
+
+    transition:.35s;
+
+}
+
+.menu-toggle:hover{
+
+    transform:scale(1.05);
+
+    border-color:var(--primary);
+
+    color:var(--primary);
+
+}
+
+
+/*==================================================
+PREMIUM MOBILE MENU
+==================================================*/
+
+.mobile-menu{
+
+    position:fixed;
+
+    inset:0;
+
+    width:100%;
+
+    height:100vh;
+
+    height:100dvh;
+
+    background:rgba(252,252,251,.98);
+
+    backdrop-filter:blur(28px);
+
+    -webkit-backdrop-filter:blur(28px);
+
+    transform:translateX(100%);
+
+    transition:.45s ease;
+
+    z-index:9999;
+
+    overflow-y:auto;
+
+    padding:100px 30px 40px;
+
+}
+
+.mobile-menu.active{
+
+    transform:translateX(0);
+
+}
+
+.mobile-menu nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.mobile-menu nav a{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:22px 0;
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:1.25rem;
+
+    font-weight:600;
+
+    color:var(--text);
+
+    border-bottom:1px solid var(--divider);
+
+    transition:.3s;
+
+}
+
+.mobile-menu nav a:hover{
+
+    color:var(--primary);
+
+    padding-left:10px;
+
+}
+
+.mobile-menu nav a.active{
+
+    color:var(--primary);
+
+}
+
+.mobile-menu .btn-primary{
+
+    margin-top:34px;
+
+    width:100%;
+
+    border-bottom:none;
+
+    color:#fff;
+
+}
+
+.mobile-menu .btn-primary:hover{
+
+    color:#fff;
+
+    padding-left:0;
+
+}
+
+
+/*==================================================
+SCROLL PROGRESS
+==================================================*/
+
+.scroll-progress{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:0;
+
+    height:3px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    z-index:10001;
+
+}
+
+
+/*==================================================
+NAVIGATION RESPONSIVE
+==================================================*/
+
+@media(max-width:1100px){
+
+    .nav-links{
+
+        display:none;
+
+    }
+
+    .menu-toggle{
+
+        display:flex;
+
+    }
+
+    .nav-right .btn-primary{
+
+        display:none;
+
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .header{
+
+        padding:14px 0;
+
+    }
+
+    .navbar{
+
+        height:66px;
+
+        padding:0 18px;
+
+        border-radius:24px;
+
+    }
+
+    .brand-title{
+
+        font-size:1.05rem;
+
+    }
+
+    .brand-subtitle{
+
+        font-size:.78rem;
+
+    }
+
+    .mobile-menu{
+
+        padding:90px 24px 30px;
+
+    }
+
+}
+
+
+@media(max-width:480px){
+
+    .navbar{
+
+        padding:0 14px;
+
+    }
+
+    .mobile-menu nav a{
+
+        font-size:1.15rem;
+
+        padding:18px 0;
+
+    }
+
+    .menu-toggle{
+
+        width:48px;
+
+        height:48px;
+
+    }
+
+}
+
+
+@media(max-width:360px){
+
+    .brand-title{
+
+        font-size:.95rem;
+
+        letter-spacing:.18em;
+
+    }
+
+    .brand-subtitle{
+
+        font-size:.72rem;
+
+    }
+
+    .menu-toggle{
+
+        width:44px;
+
+        height:44px;
+
+    }
+
+}
+      /*==================================================
+ABOUT HERO
+==================================================*/
+
+.about-hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:180px 0 120px;
+
+    background:linear-gradient(
+        180deg,
+        var(--background),
+        var(--section)
+    );
+
+}
+
+
+/*==================================================
+BACKGROUND GLOW
+==================================================*/
+
+.about-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-180px;
+
+    right:-180px;
+
+    width:430px;
+
+    height:430px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(47,102,243,.10),
+        transparent 70%
+    );
+
+}
+
+.about-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-220px;
+
+    left:-200px;
+
+    width:480px;
+
+    height:480px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(174,184,164,.18),
+        transparent 70%
+    );
+
+}
+
+
+/*==================================================
+HERO LAYOUT
+==================================================*/
+
+.about-hero-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1.08fr .92fr;
+
+    gap:80px;
+
+    align-items:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/*==================================================
+HERO CONTENT
+==================================================*/
+
+.about-hero-content{
+
+    position:relative;
+
+}
+
+.about-hero-content h1{
+
+    margin:26px 0;
+
+}
+
+.about-hero-content p{
+
+    max-width:680px;
+
+    margin-bottom:40px;
+
+    font-size:1.08rem;
+
+}
+
+
+/*==================================================
+HERO BADGE
+==================================================*/
+
+.about-hero-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 22px;
+
+    border-radius:999px;
+
+    background:var(--sage-soft);
+
+    border:1px solid var(--sage-light);
+
+    color:var(--sage-dark);
+
+    font-size:.92rem;
+
+    font-weight:600;
+
+}
+
+.about-hero-badge::before{
+
+    content:"";
+
+    width:8px;
+
+    height:8px;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    box-shadow:0 0 0 5px rgba(47,102,243,.08);
+
+}
+
+
+/*==================================================
+HERO BUTTONS
+==================================================*/
+
+.about-hero-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+}
+
+
+/*==================================================
+HERO VISUAL
+==================================================*/
+
+.about-hero-visual{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+/*==================================================
+MAIN ABOUT CARD
+==================================================*/
+
+.about-main-card{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:480px;
+
+    padding:42px;
+
+    border-radius:32px;
+
+    background:rgba(255,255,255,.84);
+
+    backdrop-filter:blur(24px);
+
+    -webkit-backdrop-filter:blur(24px);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-lg);
+
+    overflow:hidden;
+
+}
+
+
+/*==================================================
+CARD TOP ACCENT
+==================================================*/
+
+.about-main-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+}
+
+
+/*==================================================
+CARD BADGE
+==================================================*/
+
+.about-card-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:10px 18px;
+
+    margin-bottom:28px;
+
+    border-radius:999px;
+
+    background:var(--sage-soft);
+
+    border:1px solid var(--sage-light);
+
+    color:var(--sage-dark);
+
+    font-size:.88rem;
+
+    font-weight:700;
+
+}
+
+
+/*==================================================
+CARD CONTENT
+==================================================*/
+
+.about-main-card h3{
+
+    margin-bottom:14px;
+
+}
+
+.about-main-card > p{
+
+    margin-bottom:28px;
+
+    font-size:.95rem;
+
+}
+
+
+/*==================================================
+ABOUT HIGHLIGHT
+==================================================*/
+
+.about-highlight{
+
+    padding:20px;
+
+    margin-bottom:28px;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(47,102,243,.06),
+        rgba(174,184,164,.15)
+    );
+
+    border:1px solid var(--border);
+
+}
+
+.about-highlight span{
+
+    display:block;
+
+    margin-bottom:7px;
+
+    color:var(--text-muted);
+
+    font-size:.82rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.06em;
+
+}
+
+.about-highlight strong{
+
+    display:block;
+
+    font-family:"Space Grotesk",sans-serif;
+
+    color:var(--text);
+
+    font-size:1.15rem;
+
+    line-height:1.5;
+
+}
+
+
+/*==================================================
+ABOUT FEATURES
+==================================================*/
+
+.about-features{
+
+    display:grid;
+
+    gap:14px;
+
+}
+
+.about-feature{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+    color:var(--text-light);
+
+    font-size:.92rem;
+
+    line-height:1.6;
+
+}
+
+.about-feature::before{
+
+    content:"✓";
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex:0 0 24px;
+
+    width:24px;
+
+    height:24px;
+
+    border-radius:50%;
+
+    background:var(--sage-soft);
+
+    color:var(--primary);
+
+    font-size:.75rem;
+
+    font-weight:800;
+
+}
+
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+    .about-hero-wrapper{
+
+        grid-template-columns:1fr;
+
+        gap:60px;
+
+        text-align:center;
+
+    }
+
+    .about-hero-content p{
+
+        margin:0 auto 36px;
+
+    }
+
+    .about-hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .about-hero-visual{
+
+        margin-top:10px;
+
+    }
+
+    .about-main-card{
+
+        text-align:left;
+
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .about-hero{
+
+        padding:150px 0 90px;
+
+    }
+
+    .about-hero-wrapper{
+
+        gap:45px;
+
+    }
+
+    .about-main-card{
+
+        padding:32px;
+
+    }
+
+}
+
+
+@media(max-width:480px){
+
+    .about-hero{
+
+        padding:130px 0 75px;
+
+    }
+
+    .about-hero-content h1{
+
+        font-size:clamp(2.5rem,13vw,3.7rem);
+
+    }
+
+    .about-hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .about-hero-buttons .btn-primary,
+    .about-hero-buttons .btn-secondary{
+
+        width:100%;
+
+    }
+
+    .about-main-card{
+
+        padding:24px;
+
+        border-radius:24px;
+
+    }
+
+    .about-highlight{
+
+        padding:18px;
+
+    }
+
+}
+
+
+@media(max-width:360px){
+
+    .about-main-card{
+
+        padding:20px;
+
+    }
+
+      }
+      /*==================================================
+COMPANY OVERVIEW
+==================================================*/
+
+.company-overview{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:var(--background);
+
+}
+
+
+/*==================================================
+BACKGROUND GLOW
+==================================================*/
+
+.company-overview::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-180px;
+
+    left:-180px;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(47,102,243,.08),
+        transparent 70%
+    );
+
+}
+
+
+/*==================================================
+OVERVIEW LAYOUT
+==================================================*/
+
+.overview-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/*==================================================
+OVERVIEW CONTENT
+==================================================*/
+
+.overview-content{
+
+    position:relative;
+
+}
+
+.overview-content .section-badge{
+
+    margin-bottom:24px;
+
+}
+
+.overview-content h2{
+
+    margin-bottom:24px;
+
+}
+
+.overview-content > p{
+
+    margin-bottom:18px;
+
+    max-width:650px;
+
+}
+
+
+/*==================================================
+COMPANY META GRID
+==================================================*/
+
+.company-meta{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-top:38px;
+
+}
+
+
+/*==================================================
+META CARD
+==================================================*/
+
+.meta-card{
+
+    position:relative;
+
+    min-width:0;
+
+    padding:24px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.84);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-xs);
+
+    transition:.35s ease;
+
+    overflow:hidden;
+
+}
+
+.meta-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:3px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.35s ease;
+
+}
+
+.meta-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:rgba(47,102,243,.18);
+
+    box-shadow:var(--shadow);
+
+}
+
+.meta-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+.meta-card span{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:var(--text-muted);
+
+    font-size:.78rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.06em;
+
+}
+
+.meta-card strong{
+
+    display:block;
+
+    font-family:"Space Grotesk",sans-serif;
+
+    color:var(--text);
+
+    font-size:1.05rem;
+
+    line-height:1.5;
+
+}
+
+
+/*==================================================
+OVERVIEW VISUAL
+==================================================*/
+
+.overview-visual{
+
+    position:relative;
+
+}
+
+
+/*==================================================
+OVERVIEW PANEL
+==================================================*/
+
+.overview-panel{
+
+    position:relative;
+
+    padding:40px;
+
+    border-radius:32px;
+
+    background:rgba(255,255,255,.84);
+
+    backdrop-filter:blur(24px);
+
+    -webkit-backdrop-filter:blur(24px);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-lg);
+
+    overflow:hidden;
+
+}
+
+.overview-panel::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+}
+
+.overview-panel h3{
+
+    margin-bottom:30px;
+
+}
+
+
+/*==================================================
+OVERVIEW ITEMS
+==================================================*/
+
+.overview-items{
+
+    display:grid;
+
+    gap:18px;
+
+}
+
+.overview-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    transition:.35s ease;
+
+}
+
+.overview-item:hover{
+
+    transform:translateX(6px);
+
+    border-color:rgba(47,102,243,.20);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+
+/*==================================================
+OVERVIEW ICON
+==================================================*/
+
+.overview-icon{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex:0 0 56px;
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:18px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(47,102,243,.08),
+        rgba(174,184,164,.18)
+    );
+
+    border:1px solid var(--border);
+
+    color:var(--primary);
+
+}
+
+.overview-icon svg{
+
+    width:24px;
+
+    height:24px;
+
+}
+
+
+/*==================================================
+OVERVIEW ITEM CONTENT
+==================================================*/
+
+.overview-text{
+
+    flex:1;
+
+    min-width:0;
+
+}
+
+.overview-text h4{
+
+    margin-bottom:7px;
+
+}
+
+.overview-text p{
+
+    margin:0;
+
+    font-size:.88rem;
+
+    line-height:1.75;
+
+}
+
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+    .overview-wrapper{
+
+        grid-template-columns:1fr;
+
+        gap:55px;
+
+    }
+
+    .overview-content{
+
+        text-align:center;
+
+    }
+
+    .overview-content > p{
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+    .company-meta{
+
+        text-align:left;
+
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .overview-wrapper{
+
+        gap:45px;
+
+    }
+
+    .overview-panel{
+
+        padding:30px;
+
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .company-meta{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+@media(max-width:480px){
+
+    .company-meta{
+
+        margin-top:30px;
+
+        gap:14px;
+
+    }
+
+    .meta-card{
+
+        padding:20px;
+
+        border-radius:18px;
+
+    }
+
+    .overview-panel{
+
+        padding:22px;
+
+        border-radius:24px;
+
+    }
+
+    .overview-panel h3{
+
+        margin-bottom:22px;
+
+    }
+
+    .overview-item{
+
+        padding:18px;
+
+        border-radius:18px;
+
+    }
+
+    .overview-icon{
+
+        flex-basis:50px;
+
+        width:50px;
+
+        height:50px;
+
+        border-radius:16px;
+
+    }
+
+    .overview-icon svg{
+
+        width:22px;
+
+        height:22px;
+
+    }
+
+}
+
+
+@media(max-width:360px){
+
+    .overview-item{
+
+        flex-direction:column;
+
+    }
+
+      }
+      /*==================================================
+MISSION VISION & CORE VALUES
+==================================================*/
+
+.mission-vision{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:var(--section);
+
+}
+
+
+/*==================================================
+BACKGROUND GLOW
+==================================================*/
+
+.mission-vision::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-200px;
+
+    right:-180px;
+
+    width:440px;
+
+    height:440px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(47,102,243,.09),
+        transparent 70%
+    );
+
+}
+
+.mission-vision::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-220px;
+
+    left:-190px;
+
+    width:470px;
+
+    height:470px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(174,184,164,.17),
+        transparent 70%
+    );
+
+}
+
+
+/*==================================================
+MISSION & VISION GRID
+==================================================*/
+
+.purpose-grid{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+
+/*==================================================
+PURPOSE CARD
+==================================================*/
+
+.purpose-card{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    min-width:0;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.84);
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.4s ease;
+
+    overflow:hidden;
+
+}
+
+.purpose-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.4s ease;
+
+}
+
+.purpose-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(47,102,243,.18);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.purpose-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+
+/*==================================================
+FEATURED PURPOSE CARD
+==================================================*/
+
+.purpose-card.featured{
+
+    border-color:rgba(47,102,243,.20);
+
+    box-shadow:var(--shadow);
+
+}
+
+.purpose-card.featured::before{
+
+    transform:scaleX(1);
+
+}
+
+
+/*==================================================
+PURPOSE CARD LABEL
+==================================================*/
+
+.purpose-card-label{
+
+    display:inline-flex;
+
+    align-self:flex-start;
+
+    align-items:center;
+
+    padding:9px 16px;
+
+    margin-bottom:26px;
+
+    border-radius:999px;
+
+    background:var(--sage-soft);
+
+    border:1px solid var(--sage-light);
+
+    color:var(--sage-dark);
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+}
+
+
+/*==================================================
+PURPOSE ICON
+==================================================*/
+
+.purpose-icon{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:64px;
+
+    height:64px;
+
+    margin-bottom:26px;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(47,102,243,.08),
+        rgba(174,184,164,.18)
+    );
+
+    border:1px solid var(--border);
+
+    color:var(--primary);
+
+}
+
+.purpose-icon svg{
+
+    width:28px;
+
+    height:28px;
+
+}
+
+
+/*==================================================
+PURPOSE CONTENT
+==================================================*/
+
+.purpose-card h3{
+
+    margin-bottom:18px;
+
+    font-size:clamp(1.6rem,3vw,2.2rem);
+
+}
+
+.purpose-card > p{
+
+    margin-bottom:28px;
+
+    font-size:.95rem;
+
+}
+
+
+/*==================================================
+PURPOSE HIGHLIGHT
+==================================================*/
+
+.purpose-highlight{
+
+    margin-top:auto;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(47,102,243,.06),
+        rgba(174,184,164,.15)
+    );
+
+    border:1px solid var(--border);
+
+}
+
+.purpose-highlight span{
+
+    display:block;
+
+    margin-bottom:7px;
+
+    color:var(--text-muted);
+
+    font-size:.78rem;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:.06em;
+
+}
+
+.purpose-highlight strong{
+
+    display:block;
+
+    color:var(--text);
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:1rem;
+
+    line-height:1.6;
+
+}
+
+
+/*==================================================
+VALUES HEADER
+==================================================*/
+
+.values-header{
+
+    position:relative;
+
+    z-index:2;
+
+    margin:80px 0 35px;
+
+    text-align:center;
+
+}
+
+.values-header span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:var(--sage-dark);
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+}
+
+.values-header h3{
+
+    margin:0;
+
+}
+
+
+/*==================================================
+VALUES GRID
+==================================================*/
+
+.values-grid{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:22px;
+
+}
+
+
+/*==================================================
+VALUE CARD
+==================================================*/
+
+.value-card{
+
+    position:relative;
+
+    min-width:0;
+
+    padding:28px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.84);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-xs);
+
+    transition:.35s ease;
+
+    overflow:hidden;
+
+}
+
+.value-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:3px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.35s ease;
+
+}
+
+.value-card:hover{
+
+    transform:translateY(-7px);
+
+    border-color:rgba(47,102,243,.18);
+
+    box-shadow:var(--shadow);
+
+}
+
+.value-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+
+/*==================================================
+VALUE NUMBER
+==================================================*/
+
+.value-number{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:48px;
+
+    height:48px;
+
+    margin-bottom:22px;
+
+    border-radius:16px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(47,102,243,.08),
+        rgba(174,184,164,.18)
+    );
+
+    border:1px solid var(--border);
+
+    color:var(--primary);
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+}
+
+
+/*==================================================
+VALUE CONTENT
+==================================================*/
+
+.value-card h4{
+
+    margin-bottom:12px;
+
+}
+
+.value-card p{
+
+    margin:0;
+
+    font-size:.88rem;
+
+    line-height:1.75;
+
+}
+
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:1000px){
+
+    .values-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+@media(max-width:900px){
+
+    .purpose-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .purpose-card{
+
+        padding:32px;
+
+    }
+
+    .values-header{
+
+        margin-top:65px;
+
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .values-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+@media(max-width:480px){
+
+    .purpose-grid{
+
+        gap:22px;
+
+    }
+
+    .purpose-card{
+
+        padding:24px;
+
+        border-radius:24px;
+
+    }
+
+    .purpose-icon{
+
+        width:58px;
+
+        height:58px;
+
+        border-radius:18px;
+
+    }
+
+    .purpose-highlight{
+
+        padding:18px;
+
+        border-radius:18px;
+
+    }
+
+    .values-header{
+
+        margin:55px 0 28px;
+
+    }
+
+    .values-grid{
+
+        gap:16px;
+
+    }
+
+    .value-card{
+
+        padding:22px;
+
+        border-radius:20px;
+
+    }
+
+      }
+      /*==================================================
+OUR JOURNEY / COMPANY ROADMAP
+==================================================*/
+
+.company-journey{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:var(--background);
+
+}
+
+
+/*==================================================
+BACKGROUND GLOW
+==================================================*/
+
+.company-journey::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-180px;
+
+    left:-180px;
+
+    width:430px;
+
+    height:430px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(47,102,243,.08),
+        transparent 70%
+    );
+
+}
+
+.company-journey::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-220px;
+
+    right:-190px;
+
+    width:470px;
+
+    height:470px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(174,184,164,.16),
+        transparent 70%
+    );
+
+}
+
+
+/*==================================================
+JOURNEY WRAPPER
+==================================================*/
+
+.journey-wrapper{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:1050px;
+
+    margin:0 auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:42px;
+
+}
+
+
+/*==================================================
+TIMELINE LINE
+==================================================*/
+
+.journey-line{
+
+    position:absolute;
+
+    top:20px;
+
+    bottom:20px;
+
+    left:31px;
+
+    width:3px;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        180deg,
+        var(--primary),
+        var(--secondary),
+        var(--sage)
+    );
+
+}
+
+
+/*==================================================
+JOURNEY ITEM
+==================================================*/
+
+.journey-item{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:64px 130px 1fr;
+
+    gap:26px;
+
+    align-items:flex-start;
+
+}
+
+
+/*==================================================
+JOURNEY MARKER
+==================================================*/
+
+.journey-marker{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    padding-top:23px;
+
+    z-index:3;
+
+}
+
+.journey-marker span{
+
+    display:block;
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    border:5px solid #fff;
+
+    box-shadow:
+        0 0 0 7px rgba(47,102,243,.10),
+        var(--shadow-xs);
+
+}
+
+
+/*==================================================
+JOURNEY DATE
+==================================================*/
+
+.journey-date{
+
+    padding-top:17px;
+
+}
+
+.journey-date span{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:36px;
+
+    padding:7px 14px;
+
+    border-radius:999px;
+
+    background:var(--sage-soft);
+
+    border:1px solid var(--sage-light);
+
+    color:var(--sage-dark);
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+    white-space:nowrap;
+
+}
+
+
+/*==================================================
+JOURNEY CARD
+==================================================*/
+
+.journey-card{
+
+    position:relative;
+
+    min-width:0;
+
+    padding:34px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.84);
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.4s ease;
+
+    overflow:hidden;
+
+}
+
+.journey-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.4s ease;
+
+}
+
+.journey-card:hover{
+
+    transform:translateY(-7px);
+
+    border-color:rgba(47,102,243,.18);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.journey-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+
+/*==================================================
+FEATURED JOURNEY CARD
+==================================================*/
+
+.journey-card.featured{
+
+    border-color:rgba(47,102,243,.20);
+
+    box-shadow:var(--shadow);
+
+}
+
+.journey-card.featured::before{
+
+    transform:scaleX(1);
+
+}
+
+
+/*==================================================
+JOURNEY CARD LABEL
+==================================================*/
+
+.journey-card-label{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:8px 15px;
+
+    margin-bottom:20px;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(47,102,243,.06),
+        rgba(174,184,164,.15)
+    );
+
+    border:1px solid var(--border);
+
+    color:var(--primary);
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+}
+
+
+/*==================================================
+JOURNEY CONTENT
+==================================================*/
+
+.journey-card h3{
+
+    margin-bottom:14px;
+
+    font-size:clamp(1.4rem,2.5vw,1.9rem);
+
+}
+
+.journey-card p{
+
+    margin:0;
+
+    font-size:.92rem;
+
+    line-height:1.8;
+
+}
+
+
+/*==================================================
+RESPONSIVE - TABLET
+==================================================*/
+
+@media(max-width:900px){
+
+    .journey-item{
+
+        grid-template-columns:64px 1fr;
+
+        gap:22px;
+
+    }
+
+    .journey-date{
+
+        grid-column:2;
+
+        padding-top:0;
+
+        margin-bottom:-8px;
+
+    }
+
+    .journey-card{
+
+        grid-column:2;
+
+    }
+
+}
+
+
+/*==================================================
+RESPONSIVE - MOBILE
+==================================================*/
+
+@media(max-width:600px){
+
+    .journey-wrapper{
+
+        gap:34px;
+
+    }
+
+    .journey-line{
+
+        left:18px;
+
+    }
+
+    .journey-item{
+
+        grid-template-columns:38px 1fr;
+
+        gap:16px;
+
+    }
+
+    .journey-marker{
+
+        padding-top:16px;
+
+        justify-content:flex-start;
+
+        padding-left:9px;
+
+    }
+
+    .journey-marker span{
+
+        width:18px;
+
+        height:18px;
+
+        border-width:4px;
+
+        box-shadow:
+            0 0 0 5px rgba(47,102,243,.10),
+            var(--shadow-xs);
+
+    }
+
+    .journey-date{
+
+        padding-top:7px;
+
+    }
+
+}
+
+
+/*==================================================
+RESPONSIVE - SMALL MOBILE
+==================================================*/
+
+@media(max-width:480px){
+
+    .journey-card{
+
+        padding:24px;
+
+        border-radius:22px;
+
+    }
+
+    .journey-card-label{
+
+        margin-bottom:16px;
+
+    }
+
+    .journey-card h3{
+
+        font-size:1.35rem;
+
+    }
+
+}
+
+
+/*==================================================
+RESPONSIVE - EXTRA SMALL
+==================================================*/
+
+@media(max-width:360px){
+
+    .journey-item{
+
+        grid-template-columns:32px 1fr;
+
+        gap:12px;
+
+    }
+
+    .journey-line{
+
+        left:15px;
+
+    }
+
+    .journey-marker{
+
+        padding-left:6px;
+
+    }
+
+    .journey-card{
+
+        padding:20px;
+
+    }
+
+      }
+      /*==================================================
+WHY CHOOSE NOCTIS TECHNOLOGIES
+==================================================*/
+
+.why-noctis{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:var(--section);
+
+}
+
+
+/*==================================================
+BACKGROUND GLOW
+==================================================*/
+
+.why-noctis::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-180px;
+
+    right:-180px;
+
+    width:430px;
+
+    height:430px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(47,102,243,.09),
+        transparent 70%
+    );
+
+}
+
+.why-noctis::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-220px;
+
+    left:-190px;
+
+    width:470px;
+
+    height:470px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(174,184,164,.17),
+        transparent 70%
+    );
+
+}
+
+
+/*==================================================
+WHY GRID
+==================================================*/
+
+.why-grid{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:26px;
+
+}
+
+
+/*==================================================
+WHY CARD
+==================================================*/
+
+.why-card{
+
+    position:relative;
+
+    min-width:0;
+
+    padding:32px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.84);
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.4s ease;
+
+    overflow:hidden;
+
+}
+
+.why-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.4s ease;
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-9px);
+
+    border-color:rgba(47,102,243,.18);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.why-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+
+/*==================================================
+FEATURED CARD
+==================================================*/
+
+.why-card.featured{
+
+    border-color:rgba(47,102,243,.20);
+
+    box-shadow:var(--shadow);
+
+}
+
+.why-card.featured::before{
+
+    transform:scaleX(1);
+
+}
+
+
+/*==================================================
+CARD NUMBER
+==================================================*/
+
+.why-card-number{
+
+    position:absolute;
+
+    top:28px;
+
+    right:28px;
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+    color:var(--text-muted);
+
+    letter-spacing:.06em;
+
+}
+
+
+/*==================================================
+WHY ICON
+==================================================*/
+
+.why-icon{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:60px;
+
+    height:60px;
+
+    margin-bottom:25px;
+
+    border-radius:19px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(47,102,243,.08),
+        rgba(174,184,164,.18)
+    );
+
+    border:1px solid var(--border);
+
+    color:var(--primary);
+
+    transition:.35s ease;
+
+}
+
+.why-icon svg{
+
+    width:26px;
+
+    height:26px;
+
+}
+
+.why-card:hover .why-icon{
+
+    transform:scale(1.06);
+
+    border-color:rgba(47,102,243,.18);
+
+}
+
+
+/*==================================================
+WHY CARD CONTENT
+==================================================*/
+
+.why-card h3{
+
+    margin-bottom:14px;
+
+    font-size:1.35rem;
+
+}
+
+.why-card p{
+
+    margin:0;
+
+    font-size:.9rem;
+
+    line-height:1.8;
+
+}
+
+
+/*==================================================
+WHY HIGHLIGHT
+==================================================*/
+
+.why-highlight{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+    margin-top:50px;
+
+    padding:38px 42px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.84);
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+
+/*==================================================
+HIGHLIGHT CONTENT
+==================================================*/
+
+.why-highlight-content{
+
+    max-width:700px;
+
+}
+
+.why-highlight-content span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:var(--sage-dark);
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+}
+
+.why-highlight-content h3{
+
+    margin-bottom:12px;
+
+    font-size:clamp(1.5rem,3vw,2rem);
+
+}
+
+.why-highlight-content p{
+
+    margin:0;
+
+    font-size:.92rem;
+
+}
+
+
+/*==================================================
+HIGHLIGHT BUTTON
+==================================================*/
+
+.why-highlight .btn-primary{
+
+    flex-shrink:0;
+
+    white-space:nowrap;
+
+}
+
+
+/*==================================================
+RESPONSIVE - TABLET
+==================================================*/
+
+@media(max-width:1050px){
+
+    .why-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+/*==================================================
+RESPONSIVE - SMALL TABLET
+==================================================*/
+
+@media(max-width:768px){
+
+    .why-highlight{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        padding:32px;
+
+    }
+
+}
+
+
+/*==================================================
+RESPONSIVE - MOBILE
+==================================================*/
+
+@media(max-width:650px){
+
+    .why-grid{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+}
+
+
+/*==================================================
+RESPONSIVE - SMALL MOBILE
+==================================================*/
+
+@media(max-width:480px){
+
+    .why-card{
+
+        padding:24px;
+
+        border-radius:22px;
+
+    }
+
+    .why-card-number{
+
+        top:22px;
+
+        right:22px;
+
+    }
+
+    .why-icon{
+
+        width:54px;
+
+        height:54px;
+
+        border-radius:17px;
+
+    }
+
+    .why-icon svg{
+
+        width:24px;
+
+        height:24px;
+
+    }
+
+    .why-highlight{
+
+        margin-top:35px;
+
+        padding:24px;
+
+        border-radius:22px;
+
+    }
+
+    .why-highlight .btn-primary{
+
+        width:100%;
+
+    }
+
+}
+
+
+/*==================================================
+RESPONSIVE - EXTRA SMALL
+==================================================*/
+
+@media(max-width:360px){
+
+    .why-card{
+
+        padding:20px;
+
+    }
+
+    .why-card-number{
+
+        top:20px;
+
+        right:20px;
+
+    }
+
+  }
+      /*==================================================
+OUR EXPERTISE / WHAT WE DO
+==================================================*/
+
+.our-expertise{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:var(--background);
+
+}
+
+
+/*==================================================
+BACKGROUND GLOW
+==================================================*/
+
+.our-expertise::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-180px;
+
+    left:-180px;
+
+    width:430px;
+
+    height:430px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(47,102,243,.08),
+        transparent 70%
+    );
+
+}
+
+.our-expertise::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-220px;
+
+    right:-190px;
+
+    width:470px;
+
+    height:470px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(174,184,164,.16),
+        transparent 70%
+    );
+
+}
+
+
+/*==================================================
+EXPERTISE GRID
+==================================================*/
+
+.expertise-grid{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:28px;
+
+}
+
+
+/*==================================================
+EXPERTISE CARD
+==================================================*/
+
+.expertise-card{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    min-width:0;
+
+    padding:36px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.84);
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.4s ease;
+
+    overflow:hidden;
+
+}
+
+.expertise-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.4s ease;
+
+}
+
+.expertise-card:hover{
+
+    transform:translateY(-9px);
+
+    border-color:rgba(47,102,243,.18);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.expertise-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+
+/*==================================================
+FEATURED EXPERTISE CARD
+==================================================*/
+
+.expertise-card.featured{
+
+    border-color:rgba(47,102,243,.20);
+
+    box-shadow:var(--shadow);
+
+}
+
+.expertise-card.featured::before{
+
+    transform:scaleX(1);
+
+}
+
+
+/*==================================================
+EXPERTISE CARD HEADER
+==================================================*/
+
+.expertise-card-header{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    margin-bottom:26px;
+
+}
+
+
+/*==================================================
+EXPERTISE ICON
+==================================================*/
+
+.expertise-icon{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(47,102,243,.08),
+        rgba(174,184,164,.18)
+    );
+
+    border:1px solid var(--border);
+
+    color:var(--primary);
+
+    transition:.35s ease;
+
+}
+
+.expertise-icon svg{
+
+    width:28px;
+
+    height:28px;
+
+}
+
+.expertise-card:hover .expertise-icon{
+
+    transform:scale(1.06);
+
+    border-color:rgba(47,102,243,.18);
+
+}
+
+
+/*==================================================
+EXPERTISE NUMBER
+==================================================*/
+
+.expertise-number{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:44px;
+
+    height:34px;
+
+    padding:0 12px;
+
+    border-radius:999px;
+
+    background:var(--sage-soft);
+
+    border:1px solid var(--sage-light);
+
+    color:var(--sage-dark);
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+}
+
+
+/*==================================================
+EXPERTISE CONTENT
+==================================================*/
+
+.expertise-card h3{
+
+    margin-bottom:14px;
+
+    font-size:clamp(1.45rem,2.5vw,1.9rem);
+
+}
+
+.expertise-card > p{
+
+    margin-bottom:26px;
+
+    font-size:.92rem;
+
+    line-height:1.8;
+
+}
+
+
+/*==================================================
+EXPERTISE FEATURE LIST
+==================================================*/
+
+.expertise-features{
+
+    display:grid;
+
+    gap:13px;
+
+    margin-top:auto;
+
+    padding-top:24px;
+
+    border-top:1px solid var(--divider);
+
+}
+
+.expertise-features li{
+
+    position:relative;
+
+    padding-left:32px;
+
+    color:var(--text-light);
+
+    font-size:.9rem;
+
+    line-height:1.7;
+
+}
+
+.expertise-features li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    top:1px;
+
+    left:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:22px;
+
+    height:22px;
+
+    border-radius:50%;
+
+    background:var(--sage-soft);
+
+    color:var(--primary);
+
+    font-size:.68rem;
+
+    font-weight:800;
+
+}
+
+
+/*==================================================
+EXPERTISE CTA
+==================================================*/
+
+.expertise-cta{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+    margin-top:50px;
+
+    padding:38px 42px;
+
+    border-radius:28px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(47,102,243,.06),
+        rgba(174,184,164,.14)
+    );
+
+    border:1px solid var(--border);
+
+}
+
+
+/*==================================================
+EXPERTISE CTA CONTENT
+==================================================*/
+
+.expertise-cta-content{
+
+    max-width:700px;
+
+}
+
+.expertise-cta-content span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:var(--sage-dark);
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+}
+
+.expertise-cta-content h3{
+
+    margin-bottom:12px;
+
+    font-size:clamp(1.5rem,3vw,2rem);
+
+}
+
+.expertise-cta-content p{
+
+    margin:0;
+
+    font-size:.92rem;
+
+}
+
+
+/*==================================================
+EXPERTISE CTA BUTTON
+==================================================*/
+
+.expertise-cta .btn-secondary{
+
+    flex-shrink:0;
+
+    white-space:nowrap;
+
+}
+
+
+/*==================================================
+RESPONSIVE - TABLET
+==================================================*/
+
+@media(max-width:900px){
+
+    .expertise-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+/*==================================================
+RESPONSIVE - SMALL TABLET
+==================================================*/
+
+@media(max-width:768px){
+
+    .expertise-card{
+
+        padding:30px;
+
+    }
+
+    .expertise-cta{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        padding:32px;
+
+    }
+
+}
+
+
+/*==================================================
+RESPONSIVE - MOBILE
+==================================================*/
+
+@media(max-width:480px){
+
+    .expertise-grid{
+
+        gap:20px;
+
+    }
+
+    .expertise-card{
+
+        padding:24px;
+
+        border-radius:24px;
+
+    }
+
+    .expertise-icon{
+
+        width:56px;
+
+        height:56px;
+
+        border-radius:18px;
+
+    }
+
+    .expertise-icon svg{
+
+        width:25px;
+
+        height:25px;
+
+    }
+
+    .expertise-card-header{
+
+        margin-bottom:22px;
+
+    }
+
+    .expertise-cta{
+
+        margin-top:35px;
+
+        padding:24px;
+
+        border-radius:22px;
+
+    }
+
+    .expertise-cta .btn-secondary{
+
+        width:100%;
+
+    }
+
+}
+
+
+/*==================================================
+RESPONSIVE - EXTRA SMALL
+==================================================*/
+
+@media(max-width:360px){
+
+    .expertise-card{
+
+        padding:20px;
+
+    }
+
+    .expertise-card-header{
+
+        gap:12px;
+
+    }
+
+      }
+      /*==================================================
+OUR TEAM / PEOPLE BEHIND NOCTIS
+==================================================*/
+
+.about-team{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:var(--section);
+
+}
+
+
+/*==================================================
+BACKGROUND GLOW
+==================================================*/
+
+.about-team::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-180px;
+
+    right:-180px;
+
+    width:430px;
+
+    height:430px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(47,102,243,.09),
+        transparent 70%
+    );
+
+}
+
+.about-team::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-220px;
+
+    left:-190px;
+
+    width:470px;
+
+    height:470px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(174,184,164,.17),
+        transparent 70%
+    );
+
+}
+
+
+/*==================================================
+TEAM WRAPPER
+==================================================*/
+
+.about-team-wrapper{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:1.08fr .92fr;
+
+    gap:50px;
+
+    align-items:stretch;
+
+}
+
+
+/*==================================================
+LEFT TEAM CONTENT
+==================================================*/
+
+.about-team-content{
+
+    position:relative;
+
+    padding:42px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.84);
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+
+/*==================================================
+TEAM LABEL
+==================================================*/
+
+.about-team-label{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:9px 16px;
+
+    margin-bottom:24px;
+
+    border-radius:999px;
+
+    background:var(--sage-soft);
+
+    border:1px solid var(--sage-light);
+
+    color:var(--sage-dark);
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+}
+
+
+/*==================================================
+TEAM CONTENT
+==================================================*/
+
+.about-team-content > h3{
+
+    margin-bottom:18px;
+
+    font-size:clamp(1.7rem,3vw,2.3rem);
+
+}
+
+.about-team-content > p{
+
+    margin-bottom:16px;
+
+    font-size:.94rem;
+
+    line-height:1.85;
+
+}
+
+
+/*==================================================
+TEAM FEATURES
+==================================================*/
+
+.about-team-features{
+
+    display:grid;
+
+    gap:16px;
+
+    margin-top:32px;
+
+}
+
+
+/*==================================================
+TEAM FEATURE
+==================================================*/
+
+.about-team-feature{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    transition:.35s ease;
+
+}
+
+.about-team-feature:hover{
+
+    transform:translateX(6px);
+
+    border-color:rgba(47,102,243,.18);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+
+/*==================================================
+TEAM FEATURE ICON
+==================================================*/
+
+.about-team-feature-icon{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex:0 0 54px;
+
+    width:54px;
+
+    height:54px;
+
+    border-radius:17px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(47,102,243,.08),
+        rgba(174,184,164,.18)
+    );
+
+    border:1px solid var(--border);
+
+    color:var(--primary);
+
+}
+
+.about-team-feature-icon svg{
+
+    width:24px;
+
+    height:24px;
+
+}
+
+
+/*==================================================
+TEAM FEATURE CONTENT
+==================================================*/
+
+.about-team-feature h4{
+
+    margin-bottom:7px;
+
+}
+
+.about-team-feature p{
+
+    margin:0;
+
+    font-size:.86rem;
+
+    line-height:1.7;
+
+}
+
+
+/*==================================================
+RIGHT TEAM PANEL
+==================================================*/
+
+.about-team-panel{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:42px;
+
+    border-radius:30px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:#fff;
+
+    box-shadow:var(--shadow-lg);
+
+    overflow:hidden;
+
+}
+
+
+/*==================================================
+PANEL DECORATION
+==================================================*/
+
+.about-team-panel::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120px;
+
+    right:-120px;
+
+    width:280px;
+
+    height:280px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.about-team-panel::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-140px;
+
+    left:-120px;
+
+    width:300px;
+
+    height:300px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+}
+
+
+/*==================================================
+PANEL LABEL
+==================================================*/
+
+.about-team-panel-label{
+
+    position:relative;
+
+    z-index:2;
+
+    display:inline-flex;
+
+    align-self:flex-start;
+
+    padding:9px 16px;
+
+    margin-bottom:26px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.14);
+
+    border:1px solid rgba(255,255,255,.20);
+
+    color:#fff;
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+}
+
+
+/*==================================================
+PANEL CONTENT
+==================================================*/
+
+.about-team-panel h3{
+
+    position:relative;
+
+    z-index:2;
+
+    margin-bottom:18px;
+
+    color:#fff;
+
+    font-size:clamp(1.7rem,3vw,2.3rem);
+
+}
+
+.about-team-panel > p{
+
+    position:relative;
+
+    z-index:2;
+
+    margin-bottom:32px;
+
+    color:rgba(255,255,255,.84);
+
+    font-size:.94rem;
+
+    line-height:1.85;
+
+}
+
+
+/*==================================================
+CULTURE LIST
+==================================================*/
+
+.team-culture-list{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    gap:12px;
+
+    margin-bottom:34px;
+
+}
+
+
+/*==================================================
+CULTURE ITEM
+==================================================*/
+
+.team-culture-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:16px 18px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.10);
+
+    border:1px solid rgba(255,255,255,.14);
+
+    backdrop-filter:blur(10px);
+
+    -webkit-backdrop-filter:blur(10px);
+
+    transition:.35s ease;
+
+}
+
+.team-culture-item:hover{
+
+    transform:translateX(6px);
+
+    background:rgba(255,255,255,.15);
+
+}
+
+.team-culture-item span{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex:0 0 36px;
+
+    width:36px;
+
+    height:36px;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.14);
+
+    color:#fff;
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:.75rem;
+
+    font-weight:700;
+
+}
+
+.team-culture-item strong{
+
+    color:#fff;
+
+    font-size:.92rem;
+
+}
+
+
+/*==================================================
+TEAM CTA BUTTON
+==================================================*/
+
+.about-team-panel .btn-primary{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    margin-top:auto;
+
+    background:#fff;
+
+    color:var(--primary);
+
+    box-shadow:none;
+
+}
+
+.about-team-panel .btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    background:var(--sage-soft);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+
+/*==================================================
+RESPONSIVE - TABLET
+==================================================*/
+
+@media(max-width:992px){
+
+    .about-team-wrapper{
+
+        grid-template-columns:1fr;
+
+        gap:30px;
+
+    }
+
+}
+
+
+/*==================================================
+RESPONSIVE - SMALL TABLET
+==================================================*/
+
+@media(max-width:768px){
+
+    .about-team-content,
+    .about-team-panel{
+
+        padding:32px;
+
+    }
+
+}
+
+
+/*==================================================
+RESPONSIVE - MOBILE
+==================================================*/
+
+@media(max-width:480px){
+
+    .about-team-wrapper{
+
+        gap:22px;
+
+    }
+
+    .about-team-content,
+    .about-team-panel{
+
+        padding:24px;
+
+        border-radius:24px;
+
+    }
+
+    .about-team-feature{
+
+        padding:18px;
+
+        border-radius:18px;
+
+    }
+
+    .about-team-feature-icon{
+
+        flex-basis:50px;
+
+        width:50px;
+
+        height:50px;
+
+        border-radius:16px;
+
+    }
+
+    .team-culture-item{
+
+        padding:14px;
+
+    }
+
+}
+
+
+/*==================================================
+RESPONSIVE - EXTRA SMALL
+==================================================*/
+
+@media(max-width:360px){
+
+    .about-team-content,
+    .about-team-panel{
+
+        padding:20px;
+
+    }
+
+    .about-team-feature{
+
+        flex-direction:column;
+
+    }
+
+    .team-culture-item{
+
+        gap:12px;
+
+    }
+
+      }
+      /*==================================================
+NOCTIS IN NUMBERS / COMPANY STATS
+==================================================*/
+
+.company-stats{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:var(--background);
+
+}
+
+
+/*==================================================
+BACKGROUND GLOW
+==================================================*/
+
+.company-stats::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-180px;
+
+    left:-180px;
+
+    width:430px;
+
+    height:430px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(47,102,243,.08),
+        transparent 70%
+    );
+
+}
+
+.company-stats::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-220px;
+
+    right:-190px;
+
+    width:470px;
+
+    height:470px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(174,184,164,.16),
+        transparent 70%
+    );
+
+}
+
+
+/*==================================================
+STATS GRID
+==================================================*/
+
+.stats-grid{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+
+/*==================================================
+STAT CARD
+==================================================*/
+
+.stat-card{
+
+    position:relative;
+
+    min-width:0;
+
+    padding:30px;
+
+    border-radius:26px;
+
+    background:rgba(255,255,255,.84);
+
+    backdrop-filter:blur(22px);
+
+    -webkit-backdrop-filter:blur(22px);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.4s ease;
+
+    overflow:hidden;
+
+}
+
+.stat-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.4s ease;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-9px);
+
+    border-color:rgba(47,102,243,.18);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.stat-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+
+/*==================================================
+FEATURED STAT CARD
+==================================================*/
+
+.stat-card.featured{
+
+    border-color:rgba(47,102,243,.20);
+
+    box-shadow:var(--shadow);
+
+}
+
+.stat-card.featured::before{
+
+    transform:scaleX(1);
+
+}
+
+
+/*==================================================
+STAT NUMBER
+==================================================*/
+
+.stat-number{
+
+    display:flex;
+
+    align-items:flex-end;
+
+    flex-wrap:wrap;
+
+    gap:4px;
+
+    margin-bottom:24px;
+
+}
+
+.stat-number span{
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:clamp(2.5rem,5vw,3.8rem);
+
+    font-weight:700;
+
+    line-height:1;
+
+    letter-spacing:-.06em;
+
+    color:var(--primary);
+
+}
+
+.stat-number small{
+
+    padding-bottom:6px;
+
+    color:var(--sage-dark);
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+}
+
+
+/*==================================================
+STAT CONTENT
+==================================================*/
+
+.stat-card h3{
+
+    margin-bottom:12px;
+
+    font-size:1.3rem;
+
+}
+
+.stat-card p{
+
+    margin:0;
+
+    font-size:.88rem;
+
+    line-height:1.75;
+
+}
+
+
+/*==================================================
+STATS HIGHLIGHT
+==================================================*/
+
+.stats-highlight{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:auto 1fr;
+
+    gap:24px;
+
+    align-items:flex-start;
+
+    max-width:1000px;
+
+    margin:50px auto 0;
+
+    padding:32px;
+
+    border-radius:26px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(47,102,243,.06),
+        rgba(174,184,164,.14)
+    );
+
+    border:1px solid var(--border);
+
+}
+
+
+/*==================================================
+STATS HIGHLIGHT ICON
+==================================================*/
+
+.stats-highlight-icon{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:19px;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    color:var(--primary);
+
+    box-shadow:var(--shadow-xs);
+
+}
+
+.stats-highlight-icon svg{
+
+    width:28px;
+
+    height:28px;
+
+}
+
+
+/*==================================================
+STATS HIGHLIGHT CONTENT
+==================================================*/
+
+.stats-highlight-content span{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:var(--sage-dark);
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+}
+
+.stats-highlight-content h3{
+
+    margin-bottom:12px;
+
+    font-size:clamp(1.4rem,3vw,1.9rem);
+
+}
+
+.stats-highlight-content p{
+
+    margin:0;
+
+    font-size:.9rem;
+
+    line-height:1.8;
+
+}
+
+
+/*==================================================
+RESPONSIVE - LAPTOP
+==================================================*/
+
+@media(max-width:1100px){
+
+    .stats-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+/*==================================================
+RESPONSIVE - MOBILE
+==================================================*/
+
+@media(max-width:650px){
+
+    .stats-grid{
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+}
+
+
+/*==================================================
+RESPONSIVE - SMALL MOBILE
+==================================================*/
+
+@media(max-width:480px){
+
+    .stat-card{
+
+        padding:24px;
+
+        border-radius:22px;
+
+    }
+
+    .stat-number{
+
+        margin-bottom:20px;
+
+    }
+
+    .stats-highlight{
+
+        grid-template-columns:1fr;
+
+        margin-top:35px;
+
+        padding:24px;
+
+        border-radius:22px;
+
+    }
+
+    .stats-highlight-icon{
+
+        width:54px;
+
+        height:54px;
+
+        border-radius:17px;
+
+    }
+
+}
+
+
+/*==================================================
+RESPONSIVE - EXTRA SMALL
+==================================================*/
+
+@media(max-width:360px){
+
+    .stat-card{
+
+        padding:20px;
+
+    }
+
+    .stats-highlight{
+
+        padding:20px;
+
+    }
+
+  }
+      /*==================================================
+FINAL ABOUT CTA
+==================================================*/
+
+.about-cta{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:var(--section);
+
+}
+
+
+/*==================================================
+BACKGROUND GLOW
+==================================================*/
+
+.about-cta::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-180px;
+
+    right:-180px;
+
+    width:430px;
+
+    height:430px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(47,102,243,.10),
+        transparent 70%
+    );
+
+}
+
+.about-cta::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-220px;
+
+    left:-190px;
+
+    width:470px;
+
+    height:470px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+        rgba(174,184,164,.18),
+        transparent 70%
+    );
+
+}
+
+
+/*==================================================
+CTA BOX
+==================================================*/
+
+.about-cta-box{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:1.08fr .92fr;
+
+    gap:55px;
+
+    align-items:center;
+
+    padding:60px;
+
+    border-radius:36px;
+
+    background:rgba(255,255,255,.86);
+
+    backdrop-filter:blur(24px);
+
+    -webkit-backdrop-filter:blur(24px);
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-lg);
+
+    overflow:hidden;
+
+}
+
+
+/*==================================================
+CTA TOP ACCENT
+==================================================*/
+
+.about-cta-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+}
+
+
+/*==================================================
+CTA CONTENT
+==================================================*/
+
+.about-cta-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/*==================================================
+CTA BADGE
+==================================================*/
+
+.about-cta-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:10px 18px;
+
+    margin-bottom:26px;
+
+    border-radius:999px;
+
+    background:var(--sage-soft);
+
+    border:1px solid var(--sage-light);
+
+    color:var(--sage-dark);
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+}
+
+
+/*==================================================
+CTA HEADING
+==================================================*/
+
+.about-cta-content h2{
+
+    margin-bottom:22px;
+
+    font-size:clamp(2.2rem,5vw,4rem);
+
+}
+
+
+/*==================================================
+CTA PARAGRAPH
+==================================================*/
+
+.about-cta-content > p{
+
+    max-width:650px;
+
+    margin-bottom:34px;
+
+    font-size:1rem;
+
+    line-height:1.85;
+
+}
+
+
+/*==================================================
+CTA BUTTONS
+==================================================*/
+
+.about-cta-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:16px;
+
+}
+
+
+/*==================================================
+CTA INFO PANEL
+==================================================*/
+
+.about-cta-info{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    gap:16px;
+
+    padding:28px;
+
+    border-radius:28px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    box-shadow:var(--shadow-lg);
+
+    overflow:hidden;
+
+}
+
+
+/*==================================================
+CTA INFO DECORATION
+==================================================*/
+
+.about-cta-info::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-100px;
+
+    right:-100px;
+
+    width:240px;
+
+    height:240px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.07);
+
+}
+
+
+/*==================================================
+CTA INFO ITEM
+==================================================*/
+
+.about-cta-info-item{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:16px;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.10);
+
+    border:1px solid rgba(255,255,255,.14);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+
+    transition:.35s ease;
+
+}
+
+.about-cta-info-item:hover{
+
+    transform:translateX(6px);
+
+    background:rgba(255,255,255,.15);
+
+}
+
+
+/*==================================================
+CTA INFO NUMBER
+==================================================*/
+
+.about-cta-info-item > span{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex:0 0 42px;
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.14);
+
+    color:#fff;
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:.78rem;
+
+    font-weight:700;
+
+}
+
+
+/*==================================================
+CTA INFO CONTENT
+==================================================*/
+
+.about-cta-info-item strong{
+
+    display:block;
+
+    margin-bottom:6px;
+
+    color:#fff;
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:1rem;
+
+}
+
+.about-cta-info-item p{
+
+    margin:0;
+
+    color:rgba(255,255,255,.78);
+
+    font-size:.84rem;
+
+    line-height:1.7;
+
+}
+
+
+/*==================================================
+RESPONSIVE - TABLET
+==================================================*/
+
+@media(max-width:992px){
+
+    .about-cta-box{
+
+        grid-template-columns:1fr;
+
+        gap:45px;
+
+        padding:48px;
+
+    }
+
+}
+
+
+/*==================================================
+RESPONSIVE - SMALL TABLET
+==================================================*/
+
+@media(max-width:768px){
+
+    .about-cta-box{
+
+        padding:36px;
+
+        border-radius:30px;
+
+    }
+
+}
+
+
+/*==================================================
+RESPONSIVE - MOBILE
+==================================================*/
+
+@media(max-width:480px){
+
+    .about-cta-box{
+
+        gap:35px;
+
+        padding:24px;
+
+        border-radius:24px;
+
+    }
+
+    .about-cta-content h2{
+
+        font-size:clamp(2rem,11vw,3rem);
+
+    }
+
+    .about-cta-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .about-cta-buttons .btn-primary,
+    .about-cta-buttons .btn-secondary{
+
+        width:100%;
+
+    }
+
+    .about-cta-info{
+
+        padding:18px;
+
+        border-radius:22px;
+
+    }
+
+    .about-cta-info-item{
+
+        padding:17px;
+
+        border-radius:17px;
+
+    }
+
+}
+
+
+/*==================================================
+RESPONSIVE - EXTRA SMALL
+==================================================*/
+
+@media(max-width:360px){
+
+    .about-cta-box{
+
+        padding:20px;
+
+    }
+
+    .about-cta-info{
+
+        padding:14px;
+
+    }
+
+    .about-cta-info-item{
+
+        flex-direction:column;
+
+    }
+
+      }
+      </style>
+      <body>
+        <!--==================================================
+SCROLL PROGRESS
+==================================================-->
+
+<div class="scroll-progress"></div>
+
+
+<!--==================================================
+HEADER / NAVIGATION
+==================================================-->
+
+<header class="header">
+
+    <div class="container">
+
+        <nav class="navbar">
+
+
+            <!--==================================================
+            BRAND WORDMARK
+            ==================================================-->
+
+            <a href="index.html"
+               class="brand">
+
+                <div class="brand-text">
+
+                    <span class="brand-title">
+                        NOCTIS
+                    </span>
+
+                    <span class="brand-subtitle">
+                        Technologies
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <!--==================================================
+            DESKTOP NAVIGATION
+            ==================================================-->
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html"
+                       class="active">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li>
+                    <a href="solutions.html">
+                        Solutions
+                    </a>
+                </li>
+
+                <li>
+                    <a href="portfolio.html">
+                        Portfolio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pricing.html">
+                        Pricing
+                    </a>
+                </li>
+
+                <li>
+                    <a href="team.html">
+                        Team
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!--==================================================
+            NAVIGATION RIGHT AREA
+            ==================================================-->
+
+            <div class="nav-right">
+
+                <!-- DESKTOP CTA -->
+
+                <a href="contact.html"
+                   class="btn-primary">
+                    Let's Talk
+                </a>
+
+
+                <!-- MOBILE MENU BUTTON -->
+
+                <button class="menu-toggle"
+                        type="button"
+                        aria-label="Open navigation menu"
+                        aria-expanded="false">
+
+                    <svg width="28"
+                         height="28"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round">
+
+                        <path d="M4 7h16"></path>
+
+                        <path d="M4 12h16"></path>
+
+                        <path d="M4 17h16"></path>
+
+                    </svg>
+
+                </button>
+
+            </div>
+
+
+        </nav>
+
+    </div>
+
+</header>
+          <div class="mobile-menu">
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="services.html">Services</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+
+        <a href="contact.html" class="btn-primary">
+            Let's Talk
+        </a>
+    </nav>
+
+          </div>
+        <!--==================================================
+ABOUT HERO
+==================================================-->
+
+<section class="about-hero">
+
+    <div class="container">
+
+        <div class="about-hero-wrapper">
+
+
+            <!--==================================================
+            HERO CONTENT
+            ==================================================-->
+
+            <div class="about-hero-content">
+
+                <div class="about-hero-badge">
+                    About Noctis Technologies
+                </div>
+
+                <h1>
+                    Engineering Digital Experiences
+                    That Inspire Growth.
+                </h1>
+
+                <p>
+                    Noctis Technologies is a modern digital technology
+                    company focused on building powerful websites,
+                    intuitive digital experiences, and innovative
+                    technology solutions designed to help businesses
+                    establish, grow, and succeed in the digital world.
+                </p>
+
+
+                <!-- HERO BUTTONS -->
+
+                <div class="about-hero-buttons">
+
+                    <a href="services.html"
+                       class="btn-primary">
+                        Explore Our Services
+                    </a>
+
+                    <a href="contact.html"
+                       class="btn-secondary">
+                        Start a Project
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!--==================================================
+            HERO VISUAL
+            ==================================================-->
+
+            <div class="about-hero-visual">
+
+                <div class="about-main-card">
+
+                    <div class="about-card-badge">
+                        Who We Are
+                    </div>
+
+                    <h3>
+                        Technology Built Around Your Vision
+                    </h3>
+
+                    <p>
+                        We combine modern design, thoughtful development,
+                        and practical digital solutions to transform ideas
+                        into meaningful online experiences.
+                    </p>
+
+
+                    <!-- HIGHLIGHT -->
+
+                    <div class="about-highlight">
+
+                        <span>
+                            Our Focus
+                        </span>
+
+                        <strong>
+                            Building accessible and modern digital
+                            solutions for businesses of every size.
+                        </strong>
+
+                    </div>
+
+
+                    <!-- FEATURES -->
+
+                    <div class="about-features">
+
+                        <div class="about-feature">
+                            Modern Website Development
+                        </div>
+
+                        <div class="about-feature">
+                            UI/UX Focused Digital Experiences
+                        </div>
+
+                        <div class="about-feature">
+                            Business-Focused Technology Solutions
+                        </div>
+
+                        <div class="about-feature">
+                            Remote-First Digital Collaboration
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+        <!--==================================================
+COMPANY OVERVIEW
+==================================================-->
+
+<section class="company-overview">
+
+    <div class="container">
+
+        <div class="overview-wrapper">
+
+
+            <!--==================================================
+            OVERVIEW CONTENT
+            ==================================================-->
+
+            <div class="overview-content">
+
+                <div class="section-badge">
+                    Who We Are
+                </div>
+
+                <h2>
+                    Building Technology With Purpose.
+                </h2>
+
+                <p>
+                    Noctis Technologies is a digital technology company
+                    focused on creating modern, reliable, and accessible
+                    digital solutions for businesses, entrepreneurs,
+                    startups, and growing brands.
+                </p>
+
+                <p>
+                    From website development and UI/UX design to digital
+                    solutions and business-focused technology, our goal
+                    is to transform ideas into practical digital
+                    experiences that create real value.
+                </p>
+
+
+                <!--==================================================
+                COMPANY META
+                ==================================================-->
+
+                <div class="company-meta">
+
+                    <div class="meta-card">
+
+                        <span>
+                            Company
+                        </span>
+
+                        <strong>
+                            Noctis Technologies
+                        </strong>
+
+                    </div>
+
+
+                    <div class="meta-card">
+
+                        <span>
+                            Work Model
+                        </span>
+
+                        <strong>
+                            Remote-First
+                        </strong>
+
+                    </div>
+
+
+                    <div class="meta-card">
+
+                        <span>
+                            Industry
+                        </span>
+
+                        <strong>
+                            Digital Technology
+                        </strong>
+
+                    </div>
+
+
+                    <div class="meta-card">
+
+                        <span>
+                            Primary Focus
+                        </span>
+
+                        <strong>
+                            Digital Growth
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--==================================================
+            OVERVIEW VISUAL
+            ==================================================-->
+
+            <div class="overview-visual">
+
+                <div class="overview-panel">
+
+                    <h3>
+                        What Defines Noctis
+                    </h3>
+
+
+                    <div class="overview-items">
+
+
+                        <!-- ITEM 1 -->
+
+                        <div class="overview-item">
+
+                            <div class="overview-icon">
+
+                                <svg width="24"
+                                     height="24"
+                                     viewBox="0 0 24 24"
+                                     fill="none"
+                                     stroke="currentColor"
+                                     stroke-width="2"
+                                     stroke-linecap="round"
+                                     stroke-linejoin="round">
+
+                                    <rect x="3"
+                                          y="3"
+                                          width="18"
+                                          height="18"
+                                          rx="2">
+                                    </rect>
+
+                                    <path d="M3 9h18"></path>
+
+                                    <path d="M9 21V9"></path>
+
+                                </svg>
+
+                            </div>
+
+                            <div class="overview-text">
+
+                                <h4>
+                                    Modern Development
+                                </h4>
+
+                                <p>
+                                    We build responsive, scalable, and
+                                    user-focused digital experiences
+                                    designed for today's web.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ITEM 2 -->
+
+                        <div class="overview-item">
+
+                            <div class="overview-icon">
+
+                                <svg width="24"
+                                     height="24"
+                                     viewBox="0 0 24 24"
+                                     fill="none"
+                                     stroke="currentColor"
+                                     stroke-width="2"
+                                     stroke-linecap="round"
+                                     stroke-linejoin="round">
+
+                                    <circle cx="12"
+                                            cy="12"
+                                            r="3">
+                                    </circle>
+
+                                    <path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06A1.7 1.7 0 0 0 15 19.4a1.7 1.7 0 0 0-1 .6 1.7 1.7 0 0 0-.4 1.1V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 8.6 19.4a1.7 1.7 0 0 0-1.88.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.6 15a1.7 1.7 0 0 0-.6-1 1.7 1.7 0 0 0-1.1-.4H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.6 8.6a1.7 1.7 0 0 0-.34-1.88l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.6a1.7 1.7 0 0 0 1-.6 1.7 1.7 0 0 0 .4-1.1V3a2 2 0 1 1 4 0v.09A1.7 1.7 0 0 0 15.4 4.6a1.7 1.7 0 0 0 1.88-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.4 9c.12.37.34.7.6 1 .3.3.7.4 1.1.4H21a2 2 0 1 1 0 4h-.09A1.7 1.7 0 0 0 19.4 15z">
+                                    </path>
+
+                                </svg>
+
+                            </div>
+
+                            <div class="overview-text">
+
+                                <h4>
+                                    Practical Solutions
+                                </h4>
+
+                                <p>
+                                    Technology should solve real problems.
+                                    Our solutions are designed around
+                                    practical business requirements.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ITEM 3 -->
+
+                        <div class="overview-item">
+
+                            <div class="overview-icon">
+
+                                <svg width="24"
+                                     height="24"
+                                     viewBox="0 0 24 24"
+                                     fill="none"
+                                     stroke="currentColor"
+                                     stroke-width="2"
+                                     stroke-linecap="round"
+                                     stroke-linejoin="round">
+
+                                    <path d="M3 3v18h18"></path>
+
+                                    <path d="m7 16 4-5 4 3 5-7"></path>
+
+                                </svg>
+
+                            </div>
+
+                            <div class="overview-text">
+
+                                <h4>
+                                    Growth Focused
+                                </h4>
+
+                                <p>
+                                    Every digital experience we create
+                                    is built to support stronger online
+                                    presence and long-term growth.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+        <!--==================================================
+MISSION VISION & CORE VALUES
+==================================================-->
+
+<section class="mission-vision">
+
+    <div class="container">
+
+
+        <!--==================================================
+        SECTION HEADING
+        ==================================================-->
+
+        <div class="section-heading">
+
+            <div class="section-badge">
+                Our Direction
+            </div>
+
+            <h2>
+                Driven by Purpose. Built for Progress.
+            </h2>
+
+            <p>
+                Our mission, vision, and values guide how we approach
+                technology, collaborate with clients, and build digital
+                experiences designed for meaningful growth.
+            </p>
+
+        </div>
+
+
+        <!--==================================================
+        MISSION & VISION GRID
+        ==================================================-->
+
+        <div class="purpose-grid">
+
+
+            <!--==================================================
+            MISSION CARD
+            ==================================================-->
+
+            <div class="purpose-card featured">
+
+                <div class="purpose-card-label">
+                    Our Mission
+                </div>
+
+                <div class="purpose-icon">
+
+                    <svg width="28"
+                         height="28"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+
+                        <circle cx="12"
+                                cy="12"
+                                r="10">
+                        </circle>
+
+                        <circle cx="12"
+                                cy="12"
+                                r="6">
+                        </circle>
+
+                        <circle cx="12"
+                                cy="12"
+                                r="2">
+                        </circle>
+
+                    </svg>
+
+                </div>
+
+                <h3>
+                    Making Modern Technology More Accessible.
+                </h3>
+
+                <p>
+                    Our mission is to help businesses, entrepreneurs,
+                    and growing brands establish a powerful digital
+                    presence through modern, reliable, and thoughtfully
+                    designed technology solutions.
+                </p>
+
+                <div class="purpose-highlight">
+
+                    <span>
+                        Our Commitment
+                    </span>
+
+                    <strong>
+                        Practical technology. Thoughtful design.
+                        Meaningful digital growth.
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!--==================================================
+            VISION CARD
+            ==================================================-->
+
+            <div class="purpose-card">
+
+                <div class="purpose-card-label">
+                    Our Vision
+                </div>
+
+                <div class="purpose-icon">
+
+                    <svg width="28"
+                         height="28"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+
+                        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z">
+                        </path>
+
+                        <circle cx="12"
+                                cy="12"
+                                r="3">
+                        </circle>
+
+                    </svg>
+
+                </div>
+
+                <h3>
+                    Creating a Future Powered by Digital Possibilities.
+                </h3>
+
+                <p>
+                    Our vision is to grow into a trusted digital
+                    technology company that empowers businesses with
+                    accessible innovation, exceptional digital
+                    experiences, and solutions built for the future.
+                </p>
+
+                <div class="purpose-highlight">
+
+                    <span>
+                        Our Future
+                    </span>
+
+                    <strong>
+                        Empowering ideas and businesses through
+                        accessible digital innovation.
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!--==================================================
+        CORE VALUES
+        ==================================================-->
+
+        <div class="values-header">
+
+            <span>
+                What Guides Us
+            </span>
+
+            <h3>
+                Our Core Values
+            </h3>
+
+        </div>
+
+
+        <div class="values-grid">
+
+
+            <!-- VALUE 1 -->
+
+            <div class="value-card">
+
+                <div class="value-number">
+                    01
+                </div>
+
+                <h4>
+                    Innovation
+                </h4>
+
+                <p>
+                    We continuously explore modern ideas and technologies
+                    to create better digital experiences.
+                </p>
+
+            </div>
+
+
+            <!-- VALUE 2 -->
+
+            <div class="value-card">
+
+                <div class="value-number">
+                    02
+                </div>
+
+                <h4>
+                    Quality
+                </h4>
+
+                <p>
+                    We focus on thoughtful design, reliable development,
+                    and attention to detail in everything we create.
+                </p>
+
+            </div>
+
+
+            <!-- VALUE 3 -->
+
+            <div class="value-card">
+
+                <div class="value-number">
+                    03
+                </div>
+
+                <h4>
+                    Transparency
+                </h4>
+
+                <p>
+                    We believe in clear communication, honest collaboration,
+                    and straightforward digital solutions.
+                </p>
+
+            </div>
+
+
+            <!-- VALUE 4 -->
+
+            <div class="value-card">
+
+                <div class="value-number">
+                    04
+                </div>
+
+                <h4>
+                    Growth
+                </h4>
+
+                <p>
+                    We build solutions with long-term value in mind,
+                    helping our clients grow alongside technology.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+        <!--==================================================
+OUR JOURNEY / COMPANY ROADMAP
+==================================================-->
+
+<section class="company-journey">
+
+    <div class="container">
+
+
+        <!--==================================================
+        SECTION HEADING
+        ==================================================-->
+
+        <div class="section-heading">
+
+            <div class="section-badge">
+                Our Journey
+            </div>
+
+            <h2>
+                From an Idea to a Growing Digital Vision.
+            </h2>
+
+            <p>
+                Our journey is driven by continuous learning, innovation,
+                and a clear vision to build accessible digital technology
+                solutions for businesses and entrepreneurs.
+            </p>
+
+        </div>
+
+
+        <!--==================================================
+        JOURNEY TIMELINE
+        ==================================================-->
+
+        <div class="journey-wrapper">
+
+
+            <!-- TIMELINE LINE -->
+
+            <div class="journey-line"></div>
+
+
+            <!--==================================================
+            JOURNEY ITEM 1
+            ==================================================-->
+
+            <div class="journey-item">
+
+                <div class="journey-marker">
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="journey-date">
+
+                    <span>
+                        Foundation
+                    </span>
+
+                </div>
+
+
+                <div class="journey-card">
+
+                    <div class="journey-card-label">
+                        The Beginning
+                    </div>
+
+                    <h3>
+                        An Idea Built Around Digital Possibilities.
+                    </h3>
+
+                    <p>
+                        Noctis Technologies began with a simple vision:
+                        to make modern digital technology and professional
+                        web experiences more accessible to businesses,
+                        entrepreneurs, and growing brands.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!--==================================================
+            JOURNEY ITEM 2
+            ==================================================-->
+
+            <div class="journey-item">
+
+                <div class="journey-marker">
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="journey-date">
+
+                    <span>
+                        Development
+                    </span>
+
+                </div>
+
+
+                <div class="journey-card">
+
+                    <div class="journey-card-label">
+                        Building the Foundation
+                    </div>
+
+                    <h3>
+                        Turning Ideas Into Digital Experiences.
+                    </h3>
+
+                    <p>
+                        We expanded our focus toward website development,
+                        modern UI/UX design, responsive digital experiences,
+                        and practical technology solutions designed around
+                        real business requirements.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!--==================================================
+            JOURNEY ITEM 3
+            ==================================================-->
+
+            <div class="journey-item">
+
+                <div class="journey-marker">
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="journey-date">
+
+                    <span>
+                        Growth
+                    </span>
+
+                </div>
+
+
+                <div class="journey-card">
+
+                    <div class="journey-card-label">
+                        Expanding Our Capabilities
+                    </div>
+
+                    <h3>
+                        Growing Beyond Website Development.
+                    </h3>
+
+                    <p>
+                        Our vision continues to expand into broader digital
+                        solutions, business technology, automation, and
+                        intelligent systems that can help organizations
+                        operate and grow more effectively.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!--==================================================
+            JOURNEY ITEM 4
+            ==================================================-->
+
+            <div class="journey-item">
+
+                <div class="journey-marker">
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="journey-date">
+
+                    <span>
+                        Future
+                    </span>
+
+                </div>
+
+
+                <div class="journey-card featured">
+
+                    <div class="journey-card-label">
+                        What Comes Next
+                    </div>
+
+                    <h3>
+                        Building Technology for the Future.
+                    </h3>
+
+                    <p>
+                        Noctis Technologies continues moving forward with
+                        a long-term vision to create innovative, accessible,
+                        and meaningful digital solutions while building
+                        lasting relationships with businesses and clients.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+        <!--==================================================
+WHY CHOOSE NOCTIS TECHNOLOGIES
+==================================================-->
+
+<section class="why-noctis">
+
+    <div class="container">
+
+
+        <!--==================================================
+        SECTION HEADING
+        ==================================================-->
+
+        <div class="section-heading">
+
+            <div class="section-badge">
+                Why Noctis
+            </div>
+
+            <h2>
+                Technology Designed Around Your Growth.
+            </h2>
+
+            <p>
+                We combine modern design, practical development,
+                transparent collaboration, and business-focused thinking
+                to create digital solutions that deliver meaningful value.
+            </p>
+
+        </div>
+
+
+        <!--==================================================
+        WHY NOCTIS GRID
+        ==================================================-->
+
+        <div class="why-grid">
+
+
+            <!--==================================================
+            CARD 1
+            ==================================================-->
+
+            <div class="why-card">
+
+                <div class="why-card-number">
+                    01
+                </div>
+
+                <div class="why-icon">
+
+                    <svg width="26"
+                         height="26"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+
+                        <rect x="3"
+                              y="3"
+                              width="18"
+                              height="18"
+                              rx="2">
+                        </rect>
+
+                        <path d="M3 9h18"></path>
+
+                        <path d="M9 21V9"></path>
+
+                    </svg>
+
+                </div>
+
+                <h3>
+                    Modern by Design
+                </h3>
+
+                <p>
+                    We create clean, responsive, and user-focused
+                    digital experiences using modern design principles
+                    and development practices.
+                </p>
+
+            </div>
+
+
+            <!--==================================================
+            CARD 2
+            ==================================================-->
+
+            <div class="why-card featured">
+
+                <div class="why-card-number">
+                    02
+                </div>
+
+                <div class="why-icon">
+
+                    <svg width="26"
+                         height="26"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+
+                        <path d="M12 2v20"></path>
+
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7H14a3.5 3.5 0 0 1 0 7H6"></path>
+
+                    </svg>
+
+                </div>
+
+                <h3>
+                    Accessible Solutions
+                </h3>
+
+                <p>
+                    Professional digital technology should be accessible.
+                    We focus on creating practical solutions for businesses
+                    at different stages of their digital journey.
+                </p>
+
+            </div>
+
+
+            <!--==================================================
+            CARD 3
+            ==================================================-->
+
+            <div class="why-card">
+
+                <div class="why-card-number">
+                    03
+                </div>
+
+                <div class="why-icon">
+
+                    <svg width="26"
+                         height="26"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+
+                        <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z">
+                        </path>
+
+                    </svg>
+
+                </div>
+
+                <h3>
+                    Clear Communication
+                </h3>
+
+                <p>
+                    We believe strong projects are built through clear
+                    communication, transparent processes, and a shared
+                    understanding of every client's goals.
+                </p>
+
+            </div>
+
+
+            <!--==================================================
+            CARD 4
+            ==================================================-->
+
+            <div class="why-card">
+
+                <div class="why-card-number">
+                    04
+                </div>
+
+                <div class="why-icon">
+
+                    <svg width="26"
+                         height="26"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+
+                        <path d="M3 3v18h18"></path>
+
+                        <path d="m7 16 4-5 4 3 5-7"></path>
+
+                    </svg>
+
+                </div>
+
+                <h3>
+                    Growth Focused
+                </h3>
+
+                <p>
+                    Our solutions are designed not only to look modern
+                    but also to support stronger digital presence,
+                    customer engagement, and long-term business growth.
+                </p>
+
+            </div>
+
+
+            <!--==================================================
+            CARD 5
+            ==================================================-->
+
+            <div class="why-card">
+
+                <div class="why-card-number">
+                    05
+                </div>
+
+                <div class="why-icon">
+
+                    <svg width="26"
+                         height="26"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+
+                        <path d="M20 6 9 17l-5-5"></path>
+
+                    </svg>
+
+                </div>
+
+                <h3>
+                    Attention to Quality
+                </h3>
+
+                <p>
+                    From responsive layouts to user experience and
+                    technical details, we focus on delivering polished
+                    and reliable digital experiences.
+                </p>
+
+            </div>
+
+
+            <!--==================================================
+            CARD 6
+            ==================================================-->
+
+            <div class="why-card">
+
+                <div class="why-card-number">
+                    06
+                </div>
+
+                <div class="why-icon">
+
+                    <svg width="26"
+                         height="26"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+
+                        <circle cx="12"
+                                cy="12"
+                                r="10">
+                        </circle>
+
+                        <path d="M2 12h20"></path>
+
+                        <path d="M12 2a15 15 0 0 1 0 20"></path>
+
+                        <path d="M12 2a15 15 0 0 0 0 20"></path>
+
+                    </svg>
+
+                </div>
+
+                <h3>
+                    Remote-First Approach
+                </h3>
+
+                <p>
+                    Our flexible remote-first approach enables efficient
+                    digital collaboration and allows us to work with
+                    businesses beyond geographical boundaries.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!--==================================================
+        WHY NOCTIS HIGHLIGHT
+        ==================================================-->
+
+        <div class="why-highlight">
+
+            <div class="why-highlight-content">
+
+                <span>
+                    Our Approach
+                </span>
+
+                <h3>
+                    Every project starts with understanding your vision.
+                </h3>
+
+                <p>
+                    We focus on understanding what your business needs
+                    before designing the technology that helps bring
+                    your digital vision to life.
+                </p>
+
+            </div>
+
+            <a href="contact.html"
+               class="btn-primary">
+                Work With Us
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+        <!--==================================================
+OUR EXPERTISE / WHAT WE DO
+==================================================-->
+
+<section class="our-expertise">
+
+    <div class="container">
+
+
+        <!--==================================================
+        SECTION HEADING
+        ==================================================-->
+
+        <div class="section-heading">
+
+            <div class="section-badge">
+                Our Expertise
+            </div>
+
+            <h2>
+                Digital Solutions Built for Modern Businesses.
+            </h2>
+
+            <p>
+                We combine design, development, and technology to create
+                practical digital solutions that help businesses build
+                their presence, improve experiences, and move forward
+                with confidence.
+            </p>
+
+        </div>
+
+
+        <!--==================================================
+        EXPERTISE GRID
+        ==================================================-->
+
+        <div class="expertise-grid">
+
+
+            <!--==================================================
+            EXPERTISE CARD 1
+            ==================================================-->
+
+            <div class="expertise-card featured">
+
+                <div class="expertise-card-header">
+
+                    <div class="expertise-icon">
+
+                        <svg width="28"
+                             height="28"
+                             viewBox="0 0 24 24"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="2"
+                             stroke-linecap="round"
+                             stroke-linejoin="round">
+
+                            <polyline points="16 18 22 12 16 6">
+                            </polyline>
+
+                            <polyline points="8 6 2 12 8 18">
+                            </polyline>
+
+                        </svg>
+
+                    </div>
+
+                    <span class="expertise-number">
+                        01
+                    </span>
+
+                </div>
+
+                <h3>
+                    Website Development
+                </h3>
+
+                <p>
+                    We build modern, responsive, and user-friendly
+                    websites designed to create a strong digital
+                    presence for businesses and brands.
+                </p>
+
+                <ul class="expertise-features">
+
+                    <li>
+                        Responsive Website Development
+                    </li>
+
+                    <li>
+                        Business & Corporate Websites
+                    </li>
+
+                    <li>
+                        Portfolio & Personal Websites
+                    </li>
+
+                    <li>
+                        Modern Landing Pages
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!--==================================================
+            EXPERTISE CARD 2
+            ==================================================-->
+
+            <div class="expertise-card">
+
+                <div class="expertise-card-header">
+
+                    <div class="expertise-icon">
+
+                        <svg width="28"
+                             height="28"
+                             viewBox="0 0 24 24"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="2"
+                             stroke-linecap="round"
+                             stroke-linejoin="round">
+
+                            <path d="M12 20h9">
+                            </path>
+
+                            <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z">
+                            </path>
+
+                        </svg>
+
+                    </div>
+
+                    <span class="expertise-number">
+                        02
+                    </span>
+
+                </div>
+
+                <h3>
+                    UI/UX Design
+                </h3>
+
+                <p>
+                    We design clean and intuitive digital interfaces
+                    focused on usability, visual consistency, and
+                    meaningful user experiences.
+                </p>
+
+                <ul class="expertise-features">
+
+                    <li>
+                        Modern Interface Design
+                    </li>
+
+                    <li>
+                        Mobile-First Experiences
+                    </li>
+
+                    <li>
+                        User-Focused Layouts
+                    </li>
+
+                    <li>
+                        Interactive Digital Experiences
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!--==================================================
+            EXPERTISE CARD 3
+            ==================================================-->
+
+            <div class="expertise-card">
+
+                <div class="expertise-card-header">
+
+                    <div class="expertise-icon">
+
+                        <svg width="28"
+                             height="28"
+                             viewBox="0 0 24 24"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="2"
+                             stroke-linecap="round"
+                             stroke-linejoin="round">
+
+                            <rect x="3"
+                                  y="3"
+                                  width="18"
+                                  height="18"
+                                  rx="2">
+                            </rect>
+
+                            <path d="M8 12h8">
+                            </path>
+
+                            <path d="M12 8v8">
+                            </path>
+
+                        </svg>
+
+                    </div>
+
+                    <span class="expertise-number">
+                        03
+                    </span>
+
+                </div>
+
+                <h3>
+                    Digital Solutions
+                </h3>
+
+                <p>
+                    We develop practical digital solutions designed
+                    around specific business requirements and modern
+                    operational needs.
+                </p>
+
+                <ul class="expertise-features">
+
+                    <li>
+                        Custom Digital Solutions
+                    </li>
+
+                    <li>
+                        Business Integrations
+                    </li>
+
+                    <li>
+                        Digital Process Solutions
+                    </li>
+
+                    <li>
+                        Technology Consulting
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!--==================================================
+            EXPERTISE CARD 4
+            ==================================================-->
+
+            <div class="expertise-card">
+
+                <div class="expertise-card-header">
+
+                    <div class="expertise-icon">
+
+                        <svg width="28"
+                             height="28"
+                             viewBox="0 0 24 24"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="2"
+                             stroke-linecap="round"
+                             stroke-linejoin="round">
+
+                            <circle cx="12"
+                                    cy="12"
+                                    r="3">
+                            </circle>
+
+                            <path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06">
+                            </path>
+
+                            <path d="M15 19.4a1.7 1.7 0 0 0-1 .6">
+                            </path>
+
+                            <path d="M9 19.4a1.7 1.7 0 0 1-1-.6">
+                            </path>
+
+                            <path d="M4.6 15a1.7 1.7 0 0 1-.6-1">
+                            </path>
+
+                            <path d="M4.6 9a1.7 1.7 0 0 0-.6 1">
+                            </path>
+
+                            <path d="M9 4.6a1.7 1.7 0 0 0 1-.6">
+                            </path>
+
+                            <path d="M15 4.6a1.7 1.7 0 0 1 1 .6">
+                            </path>
+
+                            <path d="M19.4 9a1.7 1.7 0 0 1 .6 1">
+                            </path>
+
+                        </svg>
+
+                    </div>
+
+                    <span class="expertise-number">
+                        04
+                    </span>
+
+                </div>
+
+                <h3>
+                    Business Automation
+                </h3>
+
+                <p>
+                    We explore technology-driven automation solutions
+                    that can simplify repetitive processes and improve
+                    digital business operations.
+                </p>
+
+                <ul class="expertise-features">
+
+                    <li>
+                        Workflow Automation
+                    </li>
+
+                    <li>
+                        Process Optimization
+                    </li>
+
+                    <li>
+                        Digital Integrations
+                    </li>
+
+                    <li>
+                        Scalable Technology Solutions
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!--==================================================
+        EXPERTISE CTA
+        ==================================================-->
+
+        <div class="expertise-cta">
+
+            <div class="expertise-cta-content">
+
+                <span>
+                    Explore More
+                </span>
+
+                <h3>
+                    Discover the digital services we offer.
+                </h3>
+
+                <p>
+                    Explore our complete range of technology and digital
+                    services designed to support your next project.
+                </p>
+
+            </div>
+
+            <a href="services.html"
+               class="btn-secondary">
+                View All Services
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+        <!--==================================================
+OUR TEAM / PEOPLE BEHIND NOCTIS
+==================================================-->
+
+<section class="about-team">
+
+    <div class="container">
+
+
+        <!--==================================================
+        SECTION HEADING
+        ==================================================-->
+
+        <div class="section-heading">
+
+            <div class="section-badge">
+                Our Team
+            </div>
+
+            <h2>
+                The People Behind Our Digital Vision.
+            </h2>
+
+            <p>
+                Noctis Technologies is driven by a growing team focused
+                on technology, design, collaboration, and delivering
+                meaningful digital experiences for our clients.
+            </p>
+
+        </div>
+
+
+        <!--==================================================
+        TEAM CONTENT
+        ==================================================-->
+
+        <div class="about-team-wrapper">
+
+
+            <!--==================================================
+            LEFT CONTENT
+            ==================================================-->
+
+            <div class="about-team-content">
+
+                <div class="about-team-label">
+                    Built Through Collaboration
+                </div>
+
+                <h3>
+                    Different Skills. One Shared Vision.
+                </h3>
+
+                <p>
+                    Our team brings together different perspectives,
+                    technical skills, creative thinking, and a shared
+                    commitment to building modern digital solutions.
+                </p>
+
+                <p>
+                    We believe meaningful technology is created when
+                    people collaborate with purpose. Every project is
+                    approached with attention to the client's vision,
+                    business requirements, and long-term digital goals.
+                </p>
+
+
+                <!--==================================================
+                TEAM FEATURES
+                ==================================================-->
+
+                <div class="about-team-features">
+
+                    <div class="about-team-feature">
+
+                        <div class="about-team-feature-icon">
+
+                            <svg width="24"
+                                 height="24"
+                                 viewBox="0 0 24 24"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round">
+
+                                <circle cx="12"
+                                        cy="7"
+                                        r="4">
+                                </circle>
+
+                                <path d="M5.5 21a6.5 6.5 0 0 1 13 0">
+                                </path>
+
+                            </svg>
+
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                Growing Team
+                            </h4>
+
+                            <p>
+                                A developing team bringing together
+                                technology, design, and collaboration.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-team-feature">
+
+                        <div class="about-team-feature-icon">
+
+                            <svg width="24"
+                                 height="24"
+                                 viewBox="0 0 24 24"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round">
+
+                                <circle cx="8"
+                                        cy="8"
+                                        r="3">
+                                </circle>
+
+                                <circle cx="16"
+                                        cy="8"
+                                        r="3">
+                                </circle>
+
+                                <path d="M2 20a6 6 0 0 1 12 0">
+                                </path>
+
+                                <path d="M10 20a6 6 0 0 1 12 0">
+                                </path>
+
+                            </svg>
+
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                Collaborative Culture
+                            </h4>
+
+                            <p>
+                                Working together with shared goals,
+                                clear communication, and mutual growth.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-team-feature">
+
+                        <div class="about-team-feature-icon">
+
+                            <svg width="24"
+                                 height="24"
+                                 viewBox="0 0 24 24"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round">
+
+                                <circle cx="12"
+                                        cy="12"
+                                        r="10">
+                                </circle>
+
+                                <path d="M2 12h20">
+                                </path>
+
+                                <path d="M12 2a15 15 0 0 1 0 20">
+                                </path>
+
+                                <path d="M12 2a15 15 0 0 0 0 20">
+                                </path>
+
+                            </svg>
+
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                Remote-First
+                            </h4>
+
+                            <p>
+                                A flexible digital work environment built
+                                for modern collaboration.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--==================================================
+            RIGHT TEAM PANEL
+            ==================================================-->
+
+            <div class="about-team-panel">
+
+                <div class="about-team-panel-label">
+                    Our Culture
+                </div>
+
+                <h3>
+                    Learn. Build. Improve. Grow.
+                </h3>
+
+                <p>
+                    We are building a culture where continuous learning,
+                    creativity, responsibility, and innovation work
+                    together to create better digital solutions.
+                </p>
+
+
+                <!--==================================================
+                CULTURE LIST
+                ==================================================-->
+
+                <div class="team-culture-list">
+
+                    <div class="team-culture-item">
+
+                        <span>
+                            01
+                        </span>
+
+                        <strong>
+                            Continuous Learning
+                        </strong>
+
+                    </div>
+
+
+                    <div class="team-culture-item">
+
+                        <span>
+                            02
+                        </span>
+
+                        <strong>
+                            Creative Thinking
+                        </strong>
+
+                    </div>
+
+
+                    <div class="team-culture-item">
+
+                        <span>
+                            03
+                        </span>
+
+                        <strong>
+                            Shared Responsibility
+                        </strong>
+
+                    </div>
+
+
+                    <div class="team-culture-item">
+
+                        <span>
+                            04
+                        </span>
+
+                        <strong>
+                            Long-Term Growth
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!--==================================================
+                TEAM CTA
+                ==================================================-->
+
+                <a href="team.html"
+                   class="btn-primary">
+                    Meet Our Team
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+        <!--==================================================
+NOCTIS IN NUMBERS / COMPANY STATS
+==================================================-->
+
+<section class="company-stats">
+
+    <div class="container">
+
+
+        <!--==================================================
+        SECTION HEADING
+        ==================================================-->
+
+        <div class="section-heading">
+
+            <div class="section-badge">
+                Noctis in Numbers
+            </div>
+
+            <h2>
+                Growing Through Every Digital Experience.
+            </h2>
+
+            <p>
+                Every project, collaboration, and solution contributes
+                to our journey as we continue building a stronger
+                digital technology company.
+            </p>
+
+        </div>
+
+
+        <!--==================================================
+        STATS GRID
+        ==================================================-->
+
+        <div class="stats-grid">
+
+
+            <!-- STAT 1 -->
+
+            <div class="stat-card featured">
+
+                <div class="stat-number">
+                    <span>100</span><small>%</small>
+                </div>
+
+                <h3>
+                    Digital-First
+                </h3>
+
+                <p>
+                    A technology-focused approach built around modern
+                    digital experiences and online collaboration.
+                </p>
+
+            </div>
+
+
+            <!-- STAT 2 -->
+
+            <div class="stat-card">
+
+                <div class="stat-number">
+                    <span>24</span><small>/7</small>
+                </div>
+
+                <h3>
+                    Digital Presence
+                </h3>
+
+                <p>
+                    Websites and digital experiences designed to keep
+                    businesses accessible to their audiences online.
+                </p>
+
+            </div>
+
+
+            <!-- STAT 3 -->
+
+            <div class="stat-card">
+
+                <div class="stat-number">
+                    <span>360</span><small>°</small>
+                </div>
+
+                <h3>
+                    Digital Thinking
+                </h3>
+
+                <p>
+                    From design and development to technology solutions,
+                    we approach digital requirements from every angle.
+                </p>
+
+            </div>
+
+
+            <!-- STAT 4 -->
+
+            <div class="stat-card">
+
+                <div class="stat-number">
+                    <span>1</span><small> Vision</small>
+                </div>
+
+                <h3>
+                    Shared Direction
+                </h3>
+
+                <p>
+                    Building accessible, meaningful, and modern
+                    technology solutions that support digital growth.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!--==================================================
+        STATS HIGHLIGHT
+        ==================================================-->
+
+        <div class="stats-highlight">
+
+            <div class="stats-highlight-icon">
+
+                <svg width="28"
+                     height="28"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round">
+
+                    <path d="M3 3v18h18"></path>
+
+                    <path d="m7 16 4-5 4 3 5-7"></path>
+
+                </svg>
+
+            </div>
+
+
+            <div class="stats-highlight-content">
+
+                <span>
+                    Our Growth Mindset
+                </span>
+
+                <h3>
+                    We measure progress by the value we create.
+                </h3>
+
+                <p>
+                    As Noctis Technologies grows, our focus remains on
+                    improving our capabilities, strengthening our
+                    digital solutions, and creating better experiences
+                    for every business we work with.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+        <!--==================================================
+FINAL ABOUT CTA
+==================================================-->
+
+<section class="about-cta">
+
+    <div class="container">
+
+        <div class="about-cta-box">
+
+
+            <!--==================================================
+            CTA CONTENT
+            ==================================================-->
+
+            <div class="about-cta-content">
+
+                <div class="about-cta-badge">
+                    Let's Build Something Meaningful
+                </div>
+
+                <h2>
+                    Have an Idea?
+                    Let's Turn It Into a Digital Experience.
+                </h2>
+
+                <p>
+                    Whether you are starting a new business, building
+                    your digital presence, or looking for a modern
+                    technology solution, Noctis Technologies is ready
+                    to help bring your vision to life.
+                </p>
+
+
+                <!--==================================================
+                CTA BUTTONS
+                ==================================================-->
+
+                <div class="about-cta-buttons">
+
+                    <a href="contact.html"
+                       class="btn-primary">
+                        Start Your Project
+                    </a>
+
+                    <a href="pricing.html"
+                       class="btn-secondary">
+                        Explore Pricing
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!--==================================================
+            CTA INFO
+            ==================================================-->
+
+            <div class="about-cta-info">
+
+
+                <!-- INFO ITEM 1 -->
+
+                <div class="about-cta-info-item">
+
+                    <span>
+                        01
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Share Your Idea
+                        </strong>
+
+                        <p>
+                            Tell us about your business,
+                            project, and digital requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INFO ITEM 2 -->
+
+                <div class="about-cta-info-item">
+
+                    <span>
+                        02
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Plan the Solution
+                        </strong>
+
+                        <p>
+                            We understand your requirements and
+                            identify the right digital approach.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INFO ITEM 3 -->
+
+                <div class="about-cta-info-item">
+
+                    <span>
+                        03
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Build & Launch
+                        </strong>
+
+                        <p>
+                            Your digital experience is developed,
+                            refined, and prepared for launch.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+        <!--==================================================
+FOOTER
+==================================================-->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <!--==================================================
+        FOOTER GRID
+        ==================================================-->
+
+        <div class="footer-grid">
+
+            <!--==================================================
+            BRAND INFORMATION
+            ==================================================-->
+
+            <div class="footer-column">
+
+                <h2>NOCTIS</h2>
+
+                <span>Technologies</span>
+
+                <p>
+                    We create modern, responsive and reliable
+                    digital experiences for businesses and
+                    individuals through thoughtful design,
+                    development and technology solutions.
+                </p>
+
+            </div>
+
+            <!--==================================================
+            COMPANY LINKS
+            ==================================================-->
+
+            <div class="footer-column">
+
+                <h3>Company</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="portfolio.html">Portfolio</a></li>
+
+                    <li><a href="pricing.html">Pricing</a></li>
+
+                    <li><a href="team.html">Team</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!--==================================================
+            SERVICES LINKS
+            ==================================================-->
+
+            <div class="footer-column">
+
+                <h3>Services</h3>
+
+                <ul>
+
+                    <li><a href="services.html">Website Development</a></li>
+
+                    <li><a href="services.html">E-commerce Development</a></li>
+
+                    <li><a href="services.html">UI/UX Design</a></li>
+
+                    <li><a href="services.html">API & Integrations</a></li>
+
+                    <li><a href="services.html">SEO & Optimization</a></li>
+
+                    <li><a href="services.html">Website Maintenance</a></li>
+
+                </ul>
+
+            </div>
+
+            <!--==================================================
+            CONTACT INFORMATION
+            ==================================================-->
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <p>
+                    Mangalam, Tirupur,<br>
+                    Tamil Nadu, India
+                </p>
+
+                <p>
+                    <a href="mailto:mr.samimmanuel.j@gmail.com">
+                        mr.samimmanuel.j@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <a href="https://wa.me/919543128730"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        +91 95431 28730
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+        <!--==================================================
+        FOOTER BOTTOM
+        ==================================================-->
+
+        <div class="footer-bottom">
+
+            <!--==================================================
+            COPYRIGHT
+            ==================================================-->
+
+            <p>
+                © 2026 Noctis Technologies.
+                All rights reserved.
+            </p>
+
+            <!--==================================================
+            CREDITS
+            ==================================================-->
+
+            <p>
+                Designed & Developed by
+                Noctis Technologies
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+        <script src="navigation.js"></script>
+        <script src="about.js"></script>
+      </body>
+</html>
