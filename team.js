@@ -1133,5 +1133,41 @@ console.log(
 /*==================================================
 END
 ==================================================*/
+    /*==================================================
+MOBILE MENU
+==================================================*/
+
+const menuToggle=document.querySelector(".menu-toggle");
+const mobileMenu=document.querySelector(".mobile-menu");
+
+if(menuToggle && mobileMenu){
+
+    menuToggle.addEventListener("click",()=>{
+
+        mobileMenu.classList.toggle("active");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            mobileMenu.classList.contains("active")
+        );
+
+    });
+
+    mobileMenu.querySelectorAll("a").forEach(link=>{
+
+        link.addEventListener("click",()=>{
+
+            mobileMenu.classList.remove("active");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+        });
+
+    });
+
+}
 
 });
